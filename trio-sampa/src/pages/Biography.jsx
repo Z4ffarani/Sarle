@@ -8,11 +8,11 @@ export default function Biography() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1000)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 500)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)
@@ -29,7 +29,7 @@ export default function Biography() {
             </div>
             
             <video
-                src="../../public/biography-background.mp4"
+                src="../../../public/biography-background.mp4"
                 autoPlay
                 loop
                 muted
@@ -44,7 +44,7 @@ export default function Biography() {
                 </div>
                 <div className="flex flex-col">
                     <img
-                        src="../../public/complete-logo-trio-sampa.png"
+                        src="../../../public/complete-logo-trio-sampa.png"
                         alt="Logo completa do TRIO SAMPA"
                         className="xl:w-[700px] hover:scale-105 transition-all duration-700 ease"
                     />

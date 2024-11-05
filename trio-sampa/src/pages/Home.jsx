@@ -14,11 +14,11 @@ export default function Home() {
 
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1000)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 500)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)
@@ -34,7 +34,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <video src="../../public/home-background.mp4"
+            <video src="../../../public/home-background.mp4"
                 autoPlay
                 loop
                 muted

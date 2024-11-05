@@ -8,11 +8,11 @@ export default function Contact() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1000)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 500)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)
@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
 
             <video
-                src="../../public/contact-background.mp4"
+                src="../../../public/contact-background.mp4"
                 autoPlay
                 loop
                 muted
@@ -107,7 +107,7 @@ export default function Contact() {
             </div>
 
             <div className="mx-5 z-10 hidden 2xl:flex justify-center overflow-hidden mb-[80px]">
-                <img className="brightness-[40%] hover:brightness-100 transition duration-700 w-[500px] h-[460px] sm:w-[960px] rounded-lg" src="../../public/image-contact.jpg" alt="Imagem de músico tocando violão." />
+                <img className="brightness-[40%] hover:brightness-100 transition duration-700 w-[500px] h-[460px] sm:w-[960px] rounded-lg" src="../../../public/image-contact.jpg" alt="Imagem de músico tocando violão." />
             </div>
         </div>
     )

@@ -9,11 +9,11 @@ export default function Discography() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1000)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 500)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)
@@ -29,7 +29,7 @@ export default function Discography() {
                 </div>
             </div>
 
-            <video src="../../public/discography-background.mp4"
+            <video src="../../../public/discography-background.mp4"
                 autoPlay
                 loop
                 muted

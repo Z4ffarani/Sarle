@@ -8,11 +8,11 @@ export default function Gallery() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1000)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 500)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)
