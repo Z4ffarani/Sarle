@@ -39,7 +39,7 @@ export default function Biography() {
                 className="fixed w-full h-full object-cover opacity-10"
             />
 
-            <div className="z-40 relative flex flex-col gap-12 xl:flex-row items-center justify-center pt-14 px-5 sm:pt-[73px]">
+            <div className="z-40 relative flex flex-col gap-12 xl:flex-row items-center justify-center pt-14 px-5 sm:pt-[73px] mt-12">
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-red-500 rounded-lg backdrop-blur-md">
                     <p style={{ fontFamily: 'Instrumental Sans, sans-serif', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
                         A performance do TRIO SAMPA é marcada pelo equilíbrio entre técnica e sensibilidade, com uma execução refinada e repleta de virtuosismo. Cada integrante do trio contribui com sua própria identidade e especialidade musical, resultando em um som harmônico que valoriza a essência de cada estilo. Em suas apresentações, o grupo traz novas camadas a cada arranjo, explorando dinâmicas que vão do suave ao vibrante, oferecendo ao público uma verdadeira jornada sonora. Esse comprometimento com a qualidade e originalidade faz com que o TRIO SAMPA seja reconhecido por seu trabalho autêntico e pela capacidade de transformar músicas conhecidas em experiências memoráveis.

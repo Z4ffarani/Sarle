@@ -40,7 +40,7 @@ export default function Header() {
     }
 
     return (
-        <div className={`fixed z-[60] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-100 ease pb-8`}>
+        <div className={`fixed z-[50] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-100 ease pb-8`}>
             <header className='flex items-center justify-center pt-[28px] pl-[40px] sm:pl-0'>
                 <img src={Logo} alt="Logo" className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease h-[25px] sm:h-[45px] select-none`}/>
             </header>
