@@ -1,6 +1,9 @@
 import Loader from "../components/Loader"
 import { useState, useEffect } from "react"
 
+import Video from '../../public/biography-background.mp4'
+import Logo from '../../public/complete-logo-trio-sampa.png'
+
 export default function Biography() {
     const [isLoading, setIsLoading] = useState(true)
     const [transition, setTransition] = useState(true)
@@ -29,7 +32,7 @@ export default function Biography() {
             </div>
             
             <video
-                src="../../../public/biography-background.mp4"
+                src={Video}
                 autoPlay
                 loop
                 muted
@@ -44,7 +47,7 @@ export default function Biography() {
                 </div>
                 <div className="flex flex-col">
                     <img
-                        src="../../../public/complete-logo-trio-sampa.png"
+                        src={Logo}
                         alt="Logo completa do TRIO SAMPA"
                         className="xl:w-[700px] hover:scale-105 transition-all duration-700 ease"
                     />

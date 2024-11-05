@@ -2,6 +2,8 @@ import Loader from "../components/Loader"
 import { useState, useEffect } from "react"
 import Songs from '../data/songs.json'
 
+import Video from '../../public/discography-background.mp4'
+
 export default function Discography() {
     const [isLoading, setIsLoading] = useState(true)
     const [transition, setTransition] = useState(true)
@@ -29,7 +31,7 @@ export default function Discography() {
                 </div>
             </div>
 
-            <video src="../../../public/discography-background.mp4"
+            <video src={Video}
                 autoPlay
                 loop
                 muted

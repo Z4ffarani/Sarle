@@ -13,10 +13,6 @@ export default function Header() {
     const [scrolled, setScrolled] = useState(false)
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false)
-        }, 1000)
-
         const handleScroll = () => {
             const isScrolled = window.scrollY > 1;
             setScrolled(isScrolled);
@@ -26,7 +22,6 @@ export default function Header() {
 
         return () => {
             window.removeEventListener('scroll', handleScroll)
-            clearTimeout(timer)
         }
     }, [])
 
@@ -60,7 +55,7 @@ export default function Header() {
                 </button>
             }
 
-            <nav style={{ fontFamily: 'Instrument Sans, sans-serif' }} className={`${menu ? 'translate-x-[0px]' : 'translate-x-[-1000px]'} transition-all duration-700 ease absolute z-10 bg-[#050505] text-[35px] sm:text-[35px] w-[100%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%] top-0 pt-[100px] h-screen flex flex-col pl-10 gap-5 font-medium text-white`}>
+            <nav style={{ fontFamily: 'Instrument Sans, sans-serif' }} className={`${menu ? 'translate-x-[0px]' : 'translate-x-[-1000px]'} transition-all duration-700 ease absolute z-10 bg-[#050505] text-[35px] sm:text-[35px] w-[100%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%] top-0 pt-[100px] h-screen flex flex-col pl-10 gap-5 font-medium text-white select-none`}>
                 {['/', '/biografia', '/discografia', '/galeria', '/contato'].map((path, index) => (
                     <Link
                         key={index}

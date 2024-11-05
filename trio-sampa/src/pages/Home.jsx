@@ -4,6 +4,8 @@ import { BooleanContext } from '../components/BooleanContext.jsx'
 import { Link } from 'react-router-dom'
 import Songs from '../data/songs.json'
 
+import Video from '../../public/home-background.mp4'
+
 export default function Home() {
     const { toggleBoolean } = useContext(BooleanContext)
     const [isLoading, setIsLoading] = useState(true)
@@ -34,7 +36,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <video src="../../../public/home-background.mp4"
+            <video src={Video}
                 autoPlay
                 loop
                 muted

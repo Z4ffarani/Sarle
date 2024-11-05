@@ -1,6 +1,9 @@
 import Loader from "../components/Loader"
 import { useState, useEffect } from "react"
 
+import Video from '../../public/contact-background.mp4'
+import Image from '../../public/image-contact.jpg'
+
 export default function Contact() {
     const [isLoading, setIsLoading] = useState(true)
     const [transition, setTransition] = useState(true)
@@ -29,7 +32,7 @@ export default function Contact() {
             </div>
 
             <video
-                src="../../../public/contact-background.mp4"
+                src={Video}
                 autoPlay
                 loop
                 muted
@@ -107,7 +110,7 @@ export default function Contact() {
             </div>
 
             <div className="mx-5 z-10 hidden 2xl:flex justify-center overflow-hidden mb-[80px]">
-                <img className="brightness-[40%] hover:brightness-100 transition duration-700 w-[500px] h-[460px] sm:w-[960px] rounded-lg" src="../../../public/image-contact.jpg" alt="Imagem de músico tocando violão." />
+                <img className="brightness-[40%] hover:brightness-100 transition duration-700 w-[500px] h-[460px] sm:w-[960px] rounded-lg" src={Image} alt="Imagem de músico tocando violão." />
             </div>
         </div>
     )
