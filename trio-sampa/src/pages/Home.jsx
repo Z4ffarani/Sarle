@@ -16,11 +16,11 @@ export default function Home() {
 
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1500)
+        }, 1000)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 1000)
+        }, 500)
 
         return () => {
             clearTimeout(timerLoading)
