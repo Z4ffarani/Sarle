@@ -39,7 +39,7 @@ export default function Contact() {
                 className="fixed w-full h-full object-cover opacity-10"
             />
 
-            <div style={{ fontFamily: 'Instrumental Sans, sans-serif' }} className="z-40 pt-[40px] sm:pt-[105px]">
+            <div style={{ fontFamily: 'Instrumental Sans, sans-serif' }} className="z-40 pt-[40px] sm:pt-[105px] mt-12">
                 <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:gap-16 mb-2 p-4">
                     <div className="bg-red-500 bg-opacity-25 backdrop-blur-md p-6 rounded-lg shadow-lg w-full max-w-md border-[2px] border-red-500">
                         <h1 className="text-white text-center text-[25px] sm:text-[30px] font-bold mb-3 py-4">Entre em contato conosco.</h1>
