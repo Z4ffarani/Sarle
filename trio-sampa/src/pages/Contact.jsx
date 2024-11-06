@@ -11,11 +11,11 @@ export default function Contact() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1000)
+        }, 1200)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 500)
+        }, 700)
 
         return () => {
             clearTimeout(timerLoading)
