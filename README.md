@@ -1,7 +1,7 @@
 ![banner](./trio-sampa/assets/banner.png)
 
 # PROJETO
-**TRIO SAMPA** é um protótipo de site destinado à banda de MPB TRIO SAMPA, projetado para oferecer aos fãs e visitantes uma experiência imersiva e moderna, explorando a história e discografia do grupo musical. O site é totalmente responsivo e foi desenvolvido com tecnologias de Front-end, garantindo uma navegação intuitiva e um desempenho otimizado.
+**TRIO SAMPA** é um protótipo de site destinado à banda de MPB: TRIO SAMPA, projetado para oferecer aos fãs e visitantes uma experiência imersiva e moderna, explorando a história e discografia do grupo musical. O site é totalmente responsivo e foi desenvolvido com tecnologias de Front-end, garantindo uma navegação intuitiva e um desempenho otimizado.
 
 <br>    
 
