@@ -55,7 +55,7 @@ export default function Header() {
                 </button>
             }
 
-            <nav style={{ fontFamily: 'Instrument Sans, sans-serif' }} className={`${menu ? 'translate-x-[0px]' : 'translate-x-[-1000px]'} transition-all duration-700 ease absolute z-10 bg-[#050505] text-[35px] sm:text-[35px] w-[100%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%] top-0 pt-[100px] h-screen flex flex-col pl-10 gap-5 font-medium text-white select-none`}>
+            <nav style={{ fontFamily: 'Instrument Sans, sans-serif' }} className={`${menu ? 'translate-x-[0px]' : 'translate-x-[-1000px]'} transition-all duration-700 ease absolute z-10 bg-[#050505] text-[30px] 2xl:text-[35px] w-[100%] sm:w-[50%] md:w-[38%] lg:w-[30%] xl:w-[23%] 2xl:w-[23%] top-0 pt-[100px] h-screen flex flex-col pl-10 gap-[13px] font-medium text-white select-none`}>
                 {['/', '/biografia', '/discografia', '/galeria', '/contato'].map((path, index) => (
                     <Link
                         key={index}
