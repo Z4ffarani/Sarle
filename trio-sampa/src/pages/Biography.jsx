@@ -11,11 +11,11 @@ export default function Biography() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1100)
+        }, 1300)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 600)
+        }, 800)
 
         return () => {
             clearTimeout(timerLoading)

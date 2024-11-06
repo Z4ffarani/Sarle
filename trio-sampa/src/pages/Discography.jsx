@@ -11,11 +11,11 @@ export default function Discography() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1100)
+        }, 1200)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 600)
+        }, 700)
 
         return () => {
             clearTimeout(timerLoading)
