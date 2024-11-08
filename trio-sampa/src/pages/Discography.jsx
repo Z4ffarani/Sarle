@@ -41,7 +41,7 @@ export default function Discography() {
             <div className='pt-[80px] sm:pt-[105px] px-0 md:px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 justify-center select-none'>
                 {
                     Songs.map(song => (
-                        <div key={song.id} className='z-10 cursor-pointer border-[2px] border-red-500 max-w-[300px] md:max-w-[1000px] rounded-lg h-[200px] lg:h-[300px] m-4 flex flex-col justify-center items-center group'>
+                        <div key={song.id} className='z-10 border-[2px] border-red-500 max-w-[300px] md:max-w-[1000px] rounded-lg h-[200px] lg:h-[300px] m-4 flex flex-col justify-center items-center group'>
                             <div className='z-20 absolute text-center'>
                                 <h1 style={{ fontFamily: 'Instrumental Sans, sans-serif' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] font-bold translate-y-[20px] group-hover:translate-y-[0px] transition duration-500 ease'>{song.title}</h1>
                                 <h2 style={{ fontFamily: 'Instrumental Sans, sans-serif' }} className='text-white text-[17px] lg:text-[20px] opacity-0 group-hover:opacity-100 transition duration-300 ease'>{song.event} • <span className='font-bold'>{song.data}</span></h2>
