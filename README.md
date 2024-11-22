@@ -42,7 +42,7 @@ npm run dev
 <br>
 
 # OBSERVAÇÕES
-- É necessária a instalação do **Node.js** para rodar o projeto localmente.
+- É necessária a instalação do Node.js para rodar o projeto localmente.
 
 - O site é responsivo, oferecendo uma experiência ajustada para diferentes dispositivos, o que garante que o conteúdo seja acessível em smartphones, tablets e desktops.
 
