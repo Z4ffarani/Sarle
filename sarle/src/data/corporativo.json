@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "MG3 Comercial",
+        "event": "Distribuidora de metais",
+        "image": "../public/corporativo/mg3-comercial.jpg",
+        "link": "https://www.youtube.com/watch?v=uBzUyvGb-kI"
+    },
+
+    {
+        "id": 2,
+        "title": "Softs de Divulgação",
+        "event": "Programa para captação de leads",
+        "image": "../public/corporativo/softs-de-divulgacao.png",
+        "link": "https://www.youtube.com/watch?v=8xVD8J6br2M"
+    },
+
+    {
+        "id": 3,
+        "title": "2NOW",
+        "event": "Plataforma de cibersegurança",
+        "image": "../public/corporativo/2now.jpg",
+        "link": "https://www.youtube.com/watch?v=vot_Jpd4EmI"
+    },
+
+    {
+        "id": 4,
+        "title": "JCP - Oficina",
+        "event": "Oficina de manutenção de veículos",
+        "image": "../public/corporativo/jpc-oficina-especializada.jpg",
+        "link": "../public/corporativo/jpc-oficina-especializada.mp4"
+    }
+]
