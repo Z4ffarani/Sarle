@@ -14,13 +14,13 @@ export default function Home() {
     const [transition, setTransition] = useState(true)
     const [videoDepoimento, setVideoDepoimento] = useState(0)
     const Logos = [
-        '../../public/clientes/b4u.png',
-        '../../public/clientes/maranatha-crossfit.png',
-        '../../public/clientes/sarel.png',
-        '../../public/clientes/shamah.png',
-        '../../public/clientes/souza-lima-gospel.png',
-        '../../public/clientes/usebeyoo.png',
-        '../../public/clientes/zoom-academy.png',
+        '../../../clientes/b4u.png',
+        '../../../clientes/maranatha-crossfit.png',
+        '../../../clientes/sarel.png',
+        '../../../clientes/shamah.png',
+        '../../../clientes/souza-lima-gospel.png',
+        '../../../clientes/usebeyoo.png',
+        '../../../clientes/zoom-academy.png',
     ]
     const Depoimentos = [
         'https://www.youtube.com/embed/BaUcksguNcM',
@@ -122,7 +122,7 @@ export default function Home() {
 
                     <div className='overflow-hidden w-full whitespace-nowrap flex gap-[50px] sm:gap-[100px] my-8'>
                         { Logos.map(logo => (
-                                <img key={logo} src={logo} className='h-[100px] w-[100px] sm:h-[200px] sm:w-[200px] inline-block animate-outdoor' />
+                                <img key={logo} src={logo} className='h-[100px] w-[100px] sm:h-[200px] sm:w-[200px] inline-block animate-outdoor select-none' />
                             ))
                         }
                     </div>
