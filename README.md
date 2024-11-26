@@ -1,19 +1,21 @@
-![banner](./trio-sampa/assets/banner.png)
+![banner](./assets/banner.png)
 
 # PROJETO
-TRIO SAMPA é um protótipo de site destinado à banda de MPB: TRIO SAMPA, projetado para oferecer aos fãs e visitantes uma experiência imersiva e moderna, explorando a história e discografia do grupo musical. O site é totalmente responsivo e foi desenvolvido com tecnologias de front-end, garantindo uma navegação intuitiva e um desempenho otimizado.
+A Sarle é um produtura dedicada a criar experiências imersivas e modernas que encantam o público e dão vida a histórias únicas. Especializado em storytelling visual e produção audiovisual, a Sarle combina inovação e estratégia para entregar projetos personalizados que destacam a essência de cada marca ou artista com quem trabalha.
+
+O site da Sarle foi projetado para refletir essa visão criativa, oferecendo uma navegação responsiva, moderna e intuitiva. Com um design pensado para otimizar a experiência do usuário, o site apresenta o portfólio da empresa de forma envolvente e acessível, destacando os projetos realizados e as soluções criativas desenvolvidas ao longo de sua trajetória. Cada detalhe do site foi planejado para conectar visitantes à essência da Sarle, mostrando como a empresa transforma ideias em narrativas visuais memoráveis.
 
 <br>    
 
 # INSTRUÇÕES
 1. Em um terminal, clonar o repositório:
 ```bash
-git clone https://github.com/Z4ffarani/TRIO-SAMPA.git
+git clone https://github.com/Z4ffarani/Sarle.git
 ```
 
 2. No terminal, navegar até a pasta do projeto:
 ```bash
-cd TRIO-SAMPA/trio-sampa
+cd Sarle/sarle
 ```
 
 3. No terminal, instalar o pacote de módulos do Node.js:
@@ -37,20 +39,16 @@ npm run dev
 
 - **Compatibilidade com diferentes dispositivos** | O layout responsivo se adapta a várias resoluções de tela, oferecendo uma experiência consistente em desktops, tablets e smartphones.
 
-- **Tela de carregamento** | Inclui uma tela de carregamento personalizada que exibe os elementos da página apenas após o carregamento completo, evitando que partes da página apareçam de forma desordenada.
-
 <br>
 
 # OBSERVAÇÕES
+- Todos os direitos do site são reservados à Sarle.
+
 - É necessária a instalação do Node.js para rodar o projeto localmente.
 
 - O site é responsivo, oferecendo uma experiência ajustada para diferentes dispositivos, o que garante que o conteúdo seja acessível em smartphones, tablets e desktops.
 
-- Algumas funcionalidades avançadas de animação e transição foram incorporadas para tornar a navegação mais envolvente e refletir a identidade visual do TRIO SAMPA.
-
-- Dados temporários são armazenados no navegador do usuário, melhorando a experiência ao persistir pequenas interações durante a navegação no site.
-
-- As opções de redirecionamento para redes sociais, serviços de streaming, envio de e-mail e inscrição para notícias sobre a banda são apenas decorativas e não possuem funcionalidade implementada.
+- Algumas funcionalidades avançadas de animação foram incorporadas para tornar a navegação mais envolvente e refletir a identidade visual da Sarle.
 
 <br>
 
