@@ -1,4 +1,3 @@
-import Loader from "../components/Loader"
 import { useState, useEffect } from "react"
 import { NavLink, useParams } from "react-router-dom"
 import Whatsapp from "../components/Whatsapp"
@@ -10,25 +9,8 @@ import Gastronomia from '../data/gastronomia.json'
 import Video from '../../public/portfolio/background.mp4'
 
 export default function Portfolio() {
-    const [isLoading, setIsLoading] = useState(true)
-    const [transition, setTransition] = useState(true)
     const { categoria } = useParams()
     const [content, setContent] = useState([])
-
-    useEffect(() => {
-        const timerLoading = setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
-
-        const timerTransition = setTimeout(() => {
-            setTransition(false)
-        }, 1000)
-
-        return () => {
-            clearTimeout(timerLoading)
-            clearTimeout(timerTransition)
-        }
-    }, [])
 
     useEffect(() => {
         if (categoria === 'corporativo') {
@@ -45,12 +27,6 @@ export default function Portfolio() {
     return (
         <div className='z-50 flex justify-center xl:mb-14 min-h-[100vh]'>
             <Whatsapp />
-
-            <div className={`${isLoading ? 'fixed' : 'hidden'} z-50`}>
-                <div className={`${transition ? 'opacity-100' : 'opacity-0'} transition duration-500 ease bg-[#050505] h-screen w-screen flex justify-center items-center`}>
-                    <Loader />
-                </div>
-            </div>
 
             <video src={Video}
                 autoPlay

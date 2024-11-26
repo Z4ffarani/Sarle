@@ -1,7 +1,5 @@
-import Loader from '../components/Loader.jsx'
 import emailjs from '@emailjs/browser'
-import { useContext, useEffect, useState } from 'react'
-import { BooleanContext } from '../components/BooleanContext.jsx'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Whatsapp from '../components/Whatsapp.jsx'
 
@@ -37,9 +35,6 @@ export default function Home() {
         })
     }
 
-    const { toggleBoolean } = useContext(BooleanContext)
-    const [isLoading, setIsLoading] = useState(true)
-    const [transition, setTransition] = useState(true)
     const [videoDepoimento, setVideoDepoimento] = useState(0)
     const Logos = [
         '../../../clientes/b4u.png',
@@ -67,32 +62,9 @@ export default function Home() {
         setVideoDepoimento((prev) => (prev - 1 + Depoimentos.length) % Depoimentos.length)
     }
 
-    useEffect(() => {
-        toggleBoolean()
-
-        const timerLoading = setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
-
-        const timerTransition = setTimeout(() => {
-            setTransition(false)
-        }, 1000)
-
-        return () => {
-            clearTimeout(timerLoading)
-            clearTimeout(timerTransition)
-        }
-    }, [])
-
     return (
         <div className='min-h-[100vh]'>
             <Whatsapp />
-
-            <div className={`${isLoading ? 'fixed' : 'hidden'} z-50`}>
-                <div className={`${transition ? 'opacity-100' : 'opacity-0'} transition duration-500 ease bg-[#050505] h-screen w-screen flex justify-center items-center`}>
-                    <Loader />
-                </div>
-            </div>
 
             <img src={Image}
                 className="fixed w-full h-full object-cover opacity-[30%]"
@@ -116,7 +88,7 @@ export default function Home() {
                                 </p>
                             </div>
 
-                            <Link to={'/biografia'} onClick={toggleBoolean} style={{ fontFamily: 'airbus' }}
+                            <Link to={'/biografia'} style={{ fontFamily: 'airbus' }}
                                 className="mt-6 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[350px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] mx-6 py-[15px] rounded-full border-[3px] border-designRed hover:border-white">
                                 VER BIOGRAFIA
                             </Link>
@@ -155,7 +127,7 @@ export default function Home() {
                         }
                     </div>
 
-                    <Link to={'/portfólio'} onClick={toggleBoolean} style={{ fontFamily: 'airbus' }}
+                    <Link to={'/portfólio'} style={{ fontFamily: 'airbus' }}
                         className="mt-6 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[280px] sm:w-[380px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] mx-10 py-[15px] rounded-full border-[3px] border-designRed hover:border-white">
                         VER PORTFÓLIO
                     </Link>

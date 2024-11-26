@@ -1,7 +1,4 @@
-import Loader from "../components/Loader"
-import { useState, useEffect } from "react"
 import Whatsapp from "../components/Whatsapp"
-
 import Selfie from '../../public/biografia/selfie-sarle.png'
 import Corporativo from '../../public/biografia/corporativo.jpg'
 import Moda from '../../public/biografia/moda.png'
@@ -10,33 +7,9 @@ import Gastronomia from '../../public/biografia/gastronomia.jpg'
 import Video from '../../public/biografia/background.mp4'
 
 export default function Biography() {
-    const [isLoading, setIsLoading] = useState(true)
-    const [transition, setTransition] = useState(true)
-
-    useEffect(() => {
-        const timerLoading = setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
-
-        const timerTransition = setTimeout(() => {
-            setTransition(false)
-        }, 1000)
-
-        return () => {
-            clearTimeout(timerLoading)
-            clearTimeout(timerTransition)
-        }
-    }, [])
-
     return (
         <div className='z-50 flex flex-col gap-12 pb-2 xl:pb-14 min-h-[100vh]'>
             <Whatsapp />
-
-            <div className={`${isLoading ? 'fixed' : 'hidden'} z-50`}>
-                <div className={`${transition ? 'opacity-100' : 'opacity-0'} transition duration-500 ease bg-[#050505] h-screen w-screen flex justify-center items-center`}>
-                    <Loader />
-                </div>
-            </div>
             
             <video
                 src={Video}

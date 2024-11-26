@@ -1,35 +1,9 @@
-import Loader from "../components/Loader"
-import { useState, useEffect } from "react"
 import Whatsapp from "../components/Whatsapp"
 
 export default function Gallery() {
-    const [isLoading, setIsLoading] = useState(true)
-    const [transition, setTransition] = useState(true)
-
-    useEffect(() => {
-        const timerLoading = setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
-
-        const timerTransition = setTimeout(() => {
-            setTransition(false)
-        }, 1000)
-
-        return () => {
-            clearTimeout(timerLoading)
-            clearTimeout(timerTransition)
-        }
-    }, [])
-
     return (
         <div className='z-50 mb-[-40px] min-h-[100vh]'>
             <Whatsapp />
-
-            <div className={`${isLoading ? 'fixed' : 'hidden'} z-50`}>
-                <div className={`${transition ? 'opacity-100' : 'opacity-0'} transition duration-500 ease bg-[#050505] h-screen w-screen flex justify-center items-center`}>
-                    <Loader />
-                </div>
-            </div>
 
             <div className="grid grid-cols sm:grid-cols-2">
                 <img className="w-full h-full brightness-[40%] hover:brightness-100 transition duration-500 ease" src="https://sarle.com.br/wp-content/uploads/2023/10/DSCF6351-scaled.jpg"/>

@@ -1,6 +1,5 @@
-import Loader from "../components/Loader"
 import emailjs from '@emailjs/browser'
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Whatsapp from "../components/Whatsapp"
 
 import Video from "../../public/contato/background.mp4"
@@ -33,8 +32,6 @@ export default function Contact() {
         })
     }
 
-    const [isLoading, setIsLoading] = useState(true)
-    const [transition, setTransition] = useState(true)
     const [videoDepoimento, setVideoDepoimento] = useState(0)
     const Depoimentos = [
         'https://www.youtube.com/embed/BaUcksguNcM',
@@ -53,30 +50,9 @@ export default function Contact() {
         setVideoDepoimento((prev) => (prev - 1 + Depoimentos.length) % Depoimentos.length)
     }
 
-    useEffect(() => {
-        const timerLoading = setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
-
-        const timerTransition = setTimeout(() => {
-            setTransition(false)
-        }, 1000)
-
-        return () => {
-            clearTimeout(timerLoading)
-            clearTimeout(timerTransition)
-        }
-    }, [])
-
     return (
         <div className='z-50 flex flex-col gap-10 min-h-[100vh]'>
             <Whatsapp />
-
-            <div className={`${isLoading ? 'fixed' : 'hidden'} z-50`}>
-                <div className={`${transition ? 'opacity-100' : 'opacity-0'} transition duration-500 ease bg-[#050505] h-screen w-screen flex justify-center items-center`}>
-                    <Loader />
-                </div>
-            </div>
 
             <video
                 src={Video}

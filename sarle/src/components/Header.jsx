@@ -1,5 +1,4 @@
-import { useContext, useState, useEffect } from 'react'
-import { BooleanContext } from './BooleanContext.jsx'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { RiMenuLine } from "react-icons/ri";
 import { MdClose } from 'react-icons/md'
@@ -7,7 +6,6 @@ import { MdClose } from 'react-icons/md'
 import Logo from '../../public/logo-sarle.png'
 
 export default function Header() {
-    const { valueBoolean, toggleBoolean } = useContext(BooleanContext);
     const [menu, setMenu] = useState(false)
     const [rotate, setRotate] = useState('')
     const [scrolled, setScrolled] = useState(false)
@@ -42,7 +40,7 @@ export default function Header() {
     return (
         <div className={`fixed z-[50] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-100 ease pb-8`}>
             <header className='flex items-center justify-center pt-[28px] pl-[40px]'>
-                <img src={Logo} alt="Logo" className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease hidden sm:block sm:h-[60px] select-none`}/><h1 style={{ fontFamily: 'airbus' }} className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease text-[18px] sm:text-[30px] pl-3 text-white font-light select-none`}>SARLE PRODUÇÕES</h1>
+                <img src={Logo} alt="Logo" className='transition duration-500 ease hidden sm:block sm:h-[60px] select-none'/><h1 style={{ fontFamily: 'airbus' }} className='text-[18px] sm:text-[30px] pl-3 text-white font-light select-none'>SARLE PRODUÇÕES</h1>
             </header>
 
             { menu ? 
@@ -59,7 +57,7 @@ export default function Header() {
                 {['/', '/biografia', '/portfólio', '/galeria', '/contato'].map((path, index) => (
                     <Link
                         key={index}
-                        onClick={() => {handleCloseMenu(); toggleBoolean()}}
+                        onClick={handleCloseMenu}
                         to={path}
                         className="relative hover:text-designRed hover:translate-x-[10px] transition duration-300 ease"
                     >
