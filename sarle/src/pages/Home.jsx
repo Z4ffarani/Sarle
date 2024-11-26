@@ -140,7 +140,7 @@ export default function Home() {
 
                     <div className='flex flex-col-reverse sm:flex-row sm:m-5 sm:gap-5'>
                         <div className="bg-designRed bg-opacity-25 backdrop-blur-md mt-10 sm:w-full sm:mt-0 p-5 mx-4 sm:mx-0 md:mr-5 rounded-lg shadow-lg border-[2px] border-designRed">
-                            <h1 style={{ fontFamily: 'airbus' }} className="text-white text-center text-[25px] sm:text-[30px] mb-7 sm:mb-10">Entre em contato conosco!</h1>
+                            <h1 style={{ fontFamily: 'airbus' }} className="text-white text-center text-[25px] sm:text-[29px] mb-7 sm:mb-10">Entre em contato conosco!</h1>
                             <form onSubmit={sendEmail}>
                                 <label className="text-white text-[20px]" htmlFor="email">E-mail:</label>
                                 <br />
