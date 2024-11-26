@@ -1,10 +1,38 @@
 import Loader from "../components/Loader"
+import emailjs from '@emailjs/browser'
 import { useState, useEffect } from "react"
 import Whatsapp from "../components/Whatsapp"
 
 import Video from "../../public/contato/background.mp4"
 
 export default function Contact() {
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    function sendEmail(e) {
+        e.preventDefault()
+
+        if (email === '' || message === '') {
+            alert('Preencha todos os campos para enviar a mensagem.')
+            return
+        }
+
+        const templateParams = {
+            email: email,
+            message: message
+        }
+
+        emailjs.send("service_sqic02f", "template_pcraepr", templateParams, "0G1Jc6AAMc3jtTUoi")
+        .then((response) => {
+            alert("E-mail enviado! Entraremos em contato em breve.")
+            console.log("E-mail enviado", response.status, response.text)
+            setEmail('')
+            setMessage('')
+        }, (err) => {
+            console.log("Erro: ", err)
+        })
+    }
+
     const [isLoading, setIsLoading] = useState(true)
     const [transition, setTransition] = useState(true)
     const [videoDepoimento, setVideoDepoimento] = useState(0)
@@ -28,11 +56,11 @@ export default function Contact() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1200)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 700)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)
@@ -58,57 +86,53 @@ export default function Contact() {
                 className="fixed w-full h-full object-cover opacity-10"
             />
 
-            <div className="flex justify-center">
-                <div style={{ fontFamily: 'instrument' }} className="z-40 pt-[40px] sm:pt-[105px] mt-12 3xl:w-[36.5%]">
-                    <div className='flex flex-col-reverse sm:flex-row'>
-                        <div className="bg-designRed bg-opacity-25 backdrop-blur-md mx-[17px] mt-10 sm:w-full sm:mt-0 p-5 rounded-lg shadow-lg border-[2px] border-designRed">
-                            <h1 style={{ fontFamily: 'airbus' }} className="text-white text-center text-[25px] sm:text-[35px] mb-7 sm:mb-10">Entre em contato conosco!</h1>
-                            <form action="/enviar" method="POST">
-                                <label className="text-white text-[20px]" htmlFor="nome-contato">Representante:</label>
-                                <br />
-                                <input
-                                    style={{ fontFamily: 'instrument' }}
-                                    type="text" 
-                                    id="nome-contato" 
-                                    name="nome" 
-                                    required 
-                                    className="bg-white mt-1 block w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-designRed"
-                                />
-                                
-                                <br />
-                                
-                                <label className="text-white text-[20px]" htmlFor="mensagem">Mensagem:</label>
-                                <br />
-                                <textarea
-                                    style={{ fontFamily: 'instrument' }}
-                                    id="mensagem" 
-                                    name="mensagem" 
-                                    required 
-                                    className="bg-white mt-1 block w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-designRed" 
-                                    rows="3"
-                                />
+            <div className='flex flex-col sm:flex-row sm:m-5 gap-5 xl:gap-0 justify-center pt-20'>
+                <div className="max-w-[620px] bg-designRed bg-opacity-25 backdrop-blur-md mt-10 sm:w-full sm:mt-0 p-5 mx-4 sm:mx-0 rounded-lg shadow-lg border-[2px] border-designRed">
+                    <h1 style={{ fontFamily: 'airbus' }} className="text-white text-center text-[25px] sm:text-[30px] mb-7 sm:mb-10">Entre em contato conosco!</h1>
+                    <form onSubmit={sendEmail}>
+                        <label className="text-white text-[20px]" htmlFor="email">E-mail:</label>
+                        <br />
+                        <input
+                            style={{ fontFamily: 'instrument' }}
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            onChange={(e) => setEmail(e.target.value)}
+                            required 
+                            className="bg-white mt-1 block w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-designRed"
+                        />
+                        
+                        <br />
+                        
+                        <label className="text-white text-[20px]" htmlFor="mensagem">Mensagem:</label>
+                        <br />
+                        <textarea
+                            style={{ fontFamily: 'instrument' }}
+                            id="mensagem" 
+                            name="mensagem"
+                            onChange={(e) => setMessage(e.target.value)} 
+                            value={message}
+                            required 
+                            className="bg-white mt-1 block w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-designRed" 
+                            rows="3"
+                        />
 
-                                <br />
-                                <button style={{ fontFamily: 'airbus' }} className="bg-designRed scale-100 active:scale-[96%] text-white text-[20px] py-3 rounded-md transition w-full" type="submit">ENVIAR</button>
-                            </form>
-                        </div>
+                        <br />
+                        <button style={{ fontFamily: 'airbus' }} className="bg-designRed scale-100 active:scale-[96%] text-white text-[20px] py-3 rounded-md transition w-full" type="submit">ENVIAR</button>
+                    </form>
+                </div>
 
-                        <div className="bg-designRed bg-opacity-25 backdrop-blur-md mx-[17px] sm:w-full mt-10 sm:mt-0 pt-5 rounded-lg shadow-lg border-[2px] border-designRed">
-                            <h1 style={{ fontFamily: 'airbus' }} className="text-white text-center text-[25px] sm:text-[35px] mb-7 sm:mb-10">Depoimentos:</h1>
+                <div className='mx-[36px] sm:mx-[40px] flex items-center justify-center scale-[80%] sm:scale-[86%] md:scale-[95%]'>
+                    <button className='z-50 text-white text-[50px] pt-[30px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handlePreviousDepoimento}>⮜</button>
 
-                            <div>
-                                <button className='absolute text-white text-[40px] top-[282px] left-[10px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handlePreviousDepoimento}>◄</button>
-                                <button className='absolute text-white text-[40px] top-[282px] left-[230px] sm:left-[230px] md:left-[285px] lg:left-[370px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handleNextDepoimento}>►</button>
+                    <iframe
+                        className='rounded-md mt-10 sm:mt-0 shadow-lg border-[2px] border-designRed w-full h-[250px] sm:h-[390px] md:h-[323px] scale-[145%] md:scale-[140%]'
+                        src={Depoimentos[videoDepoimento]}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                    />
 
-                                <iframe
-                                    className='w-full h-[400px] rounded-lg'
-                                    src={Depoimentos[videoDepoimento]}
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowFullScreen
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    <button className='z-50 text-white text-[50px] pt-[30px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handleNextDepoimento}>⮞</button>
                 </div>
             </div>
 

@@ -18,11 +18,11 @@ export default function Portfolio() {
     useEffect(() => {
         const timerLoading = setTimeout(() => {
             setIsLoading(false)
-        }, 1200)
+        }, 1500)
 
         const timerTransition = setTimeout(() => {
             setTransition(false)
-        }, 700)
+        }, 1000)
 
         return () => {
             clearTimeout(timerLoading)

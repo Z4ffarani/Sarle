@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react'
 import { BooleanContext } from './BooleanContext.jsx'
 import { Link } from 'react-router-dom'
-import { RiMenu2Fill } from 'react-icons/ri'
+import { RiMenuLine } from "react-icons/ri";
 import { MdClose } from 'react-icons/md'
 
 import Logo from '../../public/logo-sarle.png'
@@ -42,16 +42,16 @@ export default function Header() {
     return (
         <div className={`fixed z-[50] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-100 ease pb-8`}>
             <header className='flex items-center justify-center pt-[28px] pl-[40px]'>
-                <img src={Logo} alt="Logo" className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease hidden sm:block sm:h-[55px] select-none`}/><h1 style={{ fontFamily: 'airbus' }} className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease text-[18px] sm:text-[30px] pl-3 text-white font-light select-none`}>SARLE PRODUÇÕES</h1>
+                <img src={Logo} alt="Logo" className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease hidden sm:block sm:h-[60px] select-none`}/><h1 style={{ fontFamily: 'airbus' }} className={`${valueBoolean ? 'opacity-0' : 'opacity-100'} transition duration-500 ease text-[18px] sm:text-[30px] pl-3 text-white font-light select-none`}>SARLE PRODUÇÕES</h1>
             </header>
 
             { menu ? 
-                <button onClick={handleCloseMenu} className='z-50 absolute top-0 pl-5 pt-[20px] sm:pt-[25px]'>
+                <button onClick={handleCloseMenu} className='z-50 absolute top-0 pl-5 pt-[20px] sm:pt-[33px]'>
                     <MdClose className={`${rotate} text-designRed text-[40px] sm:text-[50px] transform duration-500 ease`} />
                 </button>
                 :
-                <button onClick={handleOpenMenu} className='z-50 absolute top-0 pl-5 pt-[20px] sm:pt-[28px]'>
-                    <RiMenu2Fill className={`${rotate} text-white text-[40px] sm:text-[50px] scale-90 hover:scale-100 transform duration-500 ease`} />
+                <button onClick={handleOpenMenu} className='z-50 absolute top-0 pl-5 pt-[20px] sm:pt-[33px]'>
+                    <RiMenuLine className={`${rotate} text-white text-[40px] sm:text-[50px] scale-90 hover:scale-100 transform duration-500 ease`} />
                 </button>
             }
 

@@ -11,13 +11,12 @@ export default {
       },
       keyframes: {
         outdoor: {
-          '0%': { transform: 'translateX(1300%)' },
+          '0%': { transform: 'translateX(1200%)' },
           '100%': { transform: 'translateX(-1200%)' }
         }
       },
       animation: {
-        outdoor: 'outdoor 20s linear infinite',
-        wordMove: 'wordMove 12s linear infinite'
+        outdoor: 'outdoor 15s linear infinite',
       },
     },
   },
