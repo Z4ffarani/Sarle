@@ -4,10 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
+import AboutProject from './pages/AboutProject.jsx'
+
 import Home from './pages/Home.jsx'
-import Biography from './pages/Biography.jsx'
+import AboutUs from './pages/AboutUs.jsx'
 import Portfolio from './pages/Portfolio.jsx'
-import Gallery from './pages/Gallery.jsx'
 import Contact from './pages/Contact.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
 
@@ -17,10 +18,10 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {index: true, element: <Home />},
-      {path: 'biografia', element: <Biography />},
-      {path: 'portfólio',element: <Portfolio />},
-      {path: 'portfólio/:categoria',element: <Portfolio />},
-      {path: 'galeria', element: <Gallery />},
+      {path: 'sobre nós', element: <AboutUs />},
+      {path: 'portfólio', element: <Portfolio />},
+      {path: 'portfólio/:categoria', element: <Portfolio />},
+      {path: 'portfólio/:categoria/:titulo', element: <AboutProject />},
       {path: 'contato', element: <Contact />},
       {path: '*', element: <PageNotFound />},
     ]
@@ -30,5 +31,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )

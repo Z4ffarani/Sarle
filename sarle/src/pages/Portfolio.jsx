@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react"
-import { NavLink, useParams } from "react-router-dom"
+import { Link, NavLink, useParams } from "react-router-dom"
 import Whatsapp from "../components/Whatsapp"
 
 import Corporativo from '../data/corporativo.json'
 import Moda from '../data/moda.json'
 import Gastronomia from '../data/gastronomia.json'
-
-import Video from '../../public/portfolio/background.mp4'
 
 export default function Portfolio() {
     const { categoria } = useParams()
@@ -25,15 +23,8 @@ export default function Portfolio() {
     }, [categoria])
 
     return (
-        <div className='z-50 flex justify-center xl:mb-14 min-h-[100vh]'>
+        <div className='z-0 mb-[-40px] min-h-[100vh]'>  
             <Whatsapp />
-
-            <video src={Video}
-                autoPlay
-                loop
-                muted
-                className="fixed w-full h-full object-cover opacity-15"
-            />
 
             <div style={{ fontFamily: 'airbus' }} className="flex-col sm:flex-row flex text-white justify-center gap-5 sm:gap-10 p-5 absolute mt-[90px] sm:mt-[120px] text-[25px] w-full">
                 <NavLink 
@@ -62,21 +53,19 @@ export default function Portfolio() {
                 </NavLink>
             </div>
 
-            <div className='pt-[300px] sm:pt-[230px] px-0 md:px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 justify-center select-none'>                
+            <div className="pt-[300px] sm:pt-[220px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {
                     content.map(info => (
-                        <a key={info.id} href={info.link} className="active:scale-[97%] transition-all duration-300 ease">
-                            <div className='z-10 border-[2px] border-designRed hover:border-white transition-all duration-300 ease max-w-[300px] md:max-w-[1000px] rounded-lg h-[200px] lg:h-[300px] m-4 flex flex-col justify-center items-center group'>
-                                <div className='z-20 absolute text-center'>
-                                    <h1 style={{ fontFamily: 'airbus' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] translate-y-[20px] group-hover:translate-y-[0px] transition duration-500 ease'>{info.title}</h1>
-                                    <h2 style={{ fontFamily: 'instrument' }} className='text-white text-[17px] lg:text-[20px] opacity-0 group-hover:opacity-100 transition duration-300 ease'>{info.event}</h2>
+                        <Link to={`/portfólio/${info.category}/${info.title}`} key={info.id} className="cursor-pointer group z-30">
+                            <div className="flex h-full justify-center items-center">
+                                <div className="absolute z-30 flex flex-col items-center gap-5 scale-[95%] group-hover:scale-100 transition duration-500 ease">
+                                    <h1 style={{ fontFamily: 'airbus' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] opacity-100 lg:opacity-0 mb-[-20px] lg:group-hover:opacity-100 transition duration-500 ease'>{info.title}</h1>
+                                    <h2 style={{ fontFamily: 'instrument' }} className='text-white text-[17px] lg:text-[20px] opacity-0 lg:group-hover:opacity-100 transition duration-500 ease'>{info.event}</h2>
                                 </div>
 
-                                <div className='flex overflow-hidden brightness-[40%] h-full rounded-md'>
-                                    <img className='group-hover:scale-[120%] h-[100%] sm:h-[200%] xl:h-[300%] object-cover transition-all duration-1000 ease' src={info.image} alt={info.event} />
-                                </div>
+                                <img className="h-full opacity-50 lg:opacity-100 group-hover:opacity-50 transition duration-300 ease" src={info.image}/>
                             </div>
-                        </a>
+                        </Link>
                     ))
                 }
             </div>

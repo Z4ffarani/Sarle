@@ -1,9 +1,9 @@
 [
     {
-        "id": 1,
-        "title": "Em breve...",
+        "id": 10,
+        "category": "gastronomia",
+        "title": "Gastronomia",
         "event": "Mais uma novidade!",
-        "image": "https://nseledcloud.com/wp-content/uploads/2023/06/LED-Black-screen-3.jpg",
-        "link": ""
+        "image": "https://nseledcloud.com/wp-content/uploads/2023/06/LED-Black-screen-3.jpg"
     }
 ]

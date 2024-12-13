@@ -1,6 +1,8 @@
 import emailjs from '@emailjs/browser'
 import { useState } from "react"
 import Whatsapp from "../components/Whatsapp"
+import { BiSolidLeftArrow } from "react-icons/bi"
+import { BiSolidRightArrow } from "react-icons/bi"
 
 import Video from "../../public/contato/background.mp4"
 
@@ -99,7 +101,7 @@ export default function Contact() {
                 </div>
 
                 <div className='mx-[36px] sm:mx-[40px] flex items-center justify-center scale-[80%] sm:scale-[86%] md:scale-[95%]'>
-                    <button className='z-50 text-white text-[50px] pt-[30px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handlePreviousDepoimento}>⮜</button>
+                    <button className='z-50 text-white text-[40px] pt-[30px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handlePreviousDepoimento}><BiSolidLeftArrow /></button>
 
                     <iframe
                         className='rounded-md mt-10 sm:mt-0 shadow-lg border-[2px] border-designRed w-full h-[250px] sm:h-[390px] md:h-[323px] scale-[145%] md:scale-[140%]'
@@ -108,7 +110,7 @@ export default function Contact() {
                         allowFullScreen
                     />
 
-                    <button className='z-50 text-white text-[50px] pt-[30px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handleNextDepoimento}>⮞</button>
+                    <button className='z-50 text-white text-[40px] pt-[30px] transition-all duration-300 ease active:scale-90 active:text-designRed' onClick={handleNextDepoimento}><BiSolidRightArrow /></button>
                 </div>
             </div>
 

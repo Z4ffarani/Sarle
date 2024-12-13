@@ -12,7 +12,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 1;
+            const isScrolled = window.scrollY > 1
             setScrolled(isScrolled);
         }
 
@@ -38,11 +38,16 @@ export default function Header() {
     }
 
     return (
-        <div className={`fixed z-[50] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-100 ease pb-8`}>
-            <header className='flex items-center justify-center pt-[28px] pl-[40px]'>
-                <img src={Logo} alt="Logo" className='transition duration-500 ease hidden sm:block sm:h-[60px] select-none'/><h1 style={{ fontFamily: 'airbus' }} className='text-[18px] sm:text-[30px] pl-3 text-white font-light select-none'>SARLE PRODUÇÕES</h1>
+        <div className={`fixed z-[50] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-300 ease pb-8`}>
+            <header className='flex items-center justify-between w-full pt-[28px] pl-[40px] transition duration-200 ease'>
+                <div className='flex flex-row justify-center items-center w-full sm:ml-[30px] md:ml-[95px]'>
+                    <img src={Logo} alt="Logo" className={`transition duration-500 ease hidden sm:block sm:h-[60px] select-none ${scrolled ? 'scale-100' : 'scale-125'}`}/>
+                    <h1 style={{ fontFamily: 'airbus' }} className={`text-[18px] sm:text-[25px] md:text-[25px] pl-3 text-white font-light select-none transition-all duration-500 ease sm:${scrolled ? 'block' : 'hidden'}`}>SARLE PRODUÇÕES</h1>
+                </div>
+            
+                <Link to={'/contato'} style={{ fontFamily: 'instrument' }} className='hidden sm:block text-white px-5 py-[10px] border-2 rounded-full bg-transparent mr-5 text-[20px] hover:bg-designRed transition-all duration-300 ease active:scale-90 font-medium'>Contato</Link>
             </header>
-
+    
             { menu ? 
                 <button onClick={handleCloseMenu} className='z-50 absolute top-0 pl-5 pt-[20px] sm:pt-[33px]'>
                     <MdClose className={`${rotate} text-designRed text-[40px] sm:text-[50px] transform duration-500 ease`} />
@@ -54,7 +59,7 @@ export default function Header() {
             }
 
             <nav style={{ fontFamily: 'airbus' }} className={`${menu ? 'translate-x-[0px]' : 'translate-x-[-1000px]'} transition-all duration-700 ease absolute z-10 bg-[#050505] text-[30px] 2xl:text-[35px] w-[100%] sm:w-[50%] md:w-[38%] lg:w-[30%] xl:w-[23%] 2xl:w-[23%] top-0 pt-[100px] h-screen flex flex-col pl-10 gap-[13px] font-medium text-white select-none`}>
-                {['/', '/biografia', '/portfólio', '/galeria', '/contato'].map((path, index) => (
+                {['/', '/sobre nós', '/portfólio', '/contato'].map((path, index) => (
                     <Link
                         key={index}
                         onClick={handleCloseMenu}
