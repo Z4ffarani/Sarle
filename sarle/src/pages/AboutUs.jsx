@@ -1,10 +1,10 @@
 import Whatsapp from "../components/Whatsapp"
-import Selfie from '../../public/sobre nós/selfie-sarle.png'
-import Corporativo from '../../public/sobre nós/corporativo.jpg'
-import Moda from '../../public/sobre nós/moda.png'
-import Gastronomia from '../../public/sobre nós/gastronomia.jpg'
+import Selfie from '../../public/sobre-nós/selfie-sarle.png'
+import Corporativo from '../../public/sobre-nós/corporativo.jpg'
+import Moda from '../../public/sobre-nós/moda.png'
+import Gastronomia from '../../public/sobre-nós/gastronomia.jpg'
 
-import Video from '../../public/sobre nós/background.mp4'
+import Video from '../../public/sobre-nós/background.mp4'
 
 export default function AboutUs() {
     return (

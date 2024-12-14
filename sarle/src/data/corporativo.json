@@ -3,31 +3,64 @@
         "id": 1,
         "category": "corporativo",
         "title": "MG3 Comercial",
+        "image": "../../../corporativo/mg3-comercial/mg3-comercial.jpg",
         "event": "Distribuidora de metais",
-        "image": "../../../corporativo/mg3-comercial.jpg"
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad sit, dolorem aperiam eligendi, incidunt sunt nemo quis, quod quisquam ab natus quas cumque temporibus veniam est expedita vero provident? Beatae. Consequuntur aspernatur sed nulla voluptas itaque distinctio hic, explicabo rem repellat iure ipsum qui amet reiciendis, reprehenderit consequatur porro debitis. Incidunt veritatis libero sit beatae culpa dolore tenetur commodi repudiandae?",
+        "videocase": "../../../corporativo/mg3-comercial/videocase.mp4",
+        "photography": [
+            "https://www.eventbookings.com/wp-content/uploads/2018/03/event-ideas-for-party-eventbookings.jpg",
+            "https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.jpg?s=612x612&w=0&k=20&c=gWTTDs_Hl6AEGOunoQ2LsjrcTJkknf9G8BGqsywyEtE=",
+            "https://static.wixstatic.com/media/a1a7ae_9a19b400a37e4efab3c86dfdf8fc8504~mv2.jpg/v1/fill/w_752,h_502,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a1a7ae_9a19b400a37e4efab3c86dfdf8fc8504~mv2.jpg",
+            "https://wallpapers.com/images/hd/1920x1080-pictures-zog2vma3qpmt2o9l.jpg",
+            "https://static.vecteezy.com/system/resources/thumbnails/040/694/425/small_2x/ai-generated-majestic-mountain-peak-reflects-tranquil-beauty-in-nature-landscape-generated-by-ai-free-photo.jpg",
+            "https://assets2.razerzone.com/images/pnx.assets/cdc22634fe12443cd054c9365c825238/razer-kraken-v4-pro-chroma-rgb-500x500.webp",
+            "https://www.mslmagazine.co.uk/wp-content/uploads/sites/20/2023/07/Triumph-Speed-400-and-Scrambler-400-X-4.jpg",
+            "https://media.astonmartin.com/wp-content/uploads/2021/06/04b2f2b1302c55e3a25e26fbf2c2d083-scaled-2000x1500.jpg.webp",
+            "https://wallpapers.com/images/hd/1080x1920-7q3bv996d3wgdicn.jpg",
+            "https://inspi.com.br/wp-content/uploads/2023/06/Arte-vs-Design-Compreendendo-as-diferencas-fundamentais.jpg",
+            "https://i.pinimg.com/originals/54/97/92/5497928901eee520d8b9b416f5c92695.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3RmDkiAyoth-ojPZzs4AP-yD3QmQC-TJAaw&s",
+            "https://cdn.pixabay.com/photo/2024/04/25/19/49/ai-generated-8720625_640.png"
+        ],
+        "verticals": [
+            "../../../corporativo/mg3-comercial/vertical1.mp4",
+            "../../../corporativo/mg3-comercial/vertical2.mp4",
+            "../../../corporativo/mg3-comercial/vertical3.mp4"
+        ]
     },
-
     {
         "id": 2,
         "category": "corporativo",
         "title": "Softs de Divulgação",
+        "image": "../../../corporativo/softs-de-divulgação/softs-de-divulgacao.png",
         "event": "Programa para captação de leads",
-        "image": "../../../corporativo/softs-de-divulgacao.png"
+        "description": "",
+        "videocase": "",
+        "photography": [],
+        "verticals": []
     },
-
     {
         "id": 3,
         "category": "corporativo",
         "title": "2NOW",
+        "image": "../../../corporativo/2now/2now.jpg",
         "event": "Plataforma de cibersegurança",
-        "image": "../../../corporativo/2now.jpg"
+        "description": "",
+        "videocase": "",
+        "photography": [],
+        "verticals": []
     },
-
     {
         "id": 4,
         "category": "corporativo",
         "title": "JCP - Oficina",
+        "image": "../../../corporativo/jcp-oficina-especializada/jcp-oficina-especializada.jpg",
         "event": "Oficina de manutenção de veículos",
-        "image": "../../../corporativo/jpc-oficina-especializada.jpg"
+        "description": "",
+        "videocase": "",
+        "photography": [],
+        "verticals": [
+            "../../../corporativo/jcp-oficina-especializada/vertical1.mp4"
+        ]
     }
 ]

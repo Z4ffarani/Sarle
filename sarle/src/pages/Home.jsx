@@ -103,7 +103,7 @@ export default function Home() {
                         />
 
                         <div className='w-full flex flex-col justify-center items-center absolute mt-[-300px] lg:mt-[-380px] xl:mt-[-550px] 2xl:mt-[-650px]'>
-                            <h1 style={{ fontFamily: 'airbus' }} className={`hidden md:block text-[50px] lg:text-[70px] xl:text-[100px] text-white font-light select-none transition-all duration-700 ease-out ${scrolled ? 'opacity-0 scale-[70%] md:mt-[-50px] lg:mt-[-400px]' : 'opacity-100'}`}>SARLE PRODUÇÕES</h1>
+                            <h1 style={{ fontFamily: 'airbus' }} className={`hidden md:block text-[50px] lg:text-[70px] xl:text-[100px] text-white font-light select-none transition-all duration-1000 ease-out ${scrolled ? 'opacity-0 scale-[70%] md:mt-[-50px] lg:mt-[-400px]' : 'opacity-100'}`}>SARLE PRODUÇÕES</h1>
                             
                             <Link to='/sobre nós' style={{ fontFamily: 'airbus' }}
                                 className={`hidden md:block md:mt-8 lg:mt-10 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[300px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] py-[15px] rounded-full border-[3px] border-designRed hover:border-white ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
