@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import Corporativo from '../data/corporativo.json'
 import Moda from '../data/moda.json'
@@ -16,7 +16,7 @@ export default function AboutProject() {
     const foundContent = categories.flat().find(info => info.title === titulo)
 
     setContent(foundContent)
-  }, [categories])
+  }, [titulo])
 
   return (
     <div className='min-h-screen text-white'>
@@ -51,7 +51,9 @@ export default function AboutProject() {
                     <div className='masonry mb-[60px] sm:mb-[110px]' style={{ columnCount: 3, columnGap: '0px' }}>
                       {
                         content.photography.map(photo => (
-                          <img src={photo} className='w-full object-cover break-inside-avoid'/>
+                          <Link to={photo}>
+                            <img src={photo} className='break-inside-avoid' />
+                          </Link>
                         ))
                       }
                     </div>

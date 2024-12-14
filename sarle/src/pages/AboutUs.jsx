@@ -1,4 +1,5 @@
 import Whatsapp from "../components/Whatsapp"
+
 import Selfie from '../../public/sobre-nós/selfie-sarle.png'
 import Corporativo from '../../public/sobre-nós/corporativo.jpg'
 import Moda from '../../public/sobre-nós/moda.png'
@@ -91,37 +92,37 @@ export default function AboutUs() {
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
                             <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAFAEL</h1>
-                            <h2 style={{ }} className="text-[20px]">Crew manager</h2>
+                            <h2 style={{ }} className="text-[20px]">CEO</h2>
                         </div>
-                        <img src={Gastronomia} className="object-cover h-full"/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77Gs7w4wwl7vSWPLrfrjva3emhw9IYLoQIA&s" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAFAEL</h1>
-                            <h2 style={{ }} className="text-[20px]">Crew manager</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">LEONARDO</h1>
+                            <h2 style={{ }} className="text-[20px]">Endorser</h2>
                         </div>
-                        <img src={Gastronomia} className="object-cover h-full"/>
+                        <img src="https://mim.p7s1.io/pis/ld/b324zChLCVyZ-c1vEwXZAanB-DJ78rnq2V2gRWTHzVV6NywNWMSJCEGmZ4YSENP-WRL0b9lo2z78G9xHvUNf6-v3GkS17Xq6Ngi3X88gR6aFnJpo707iGlklQ2iDFZevNqtgiG86mWA/profile:original?rect=1151%2C0%2C2711%2C2711&w=400" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAFAEL</h1>
-                            <h2 style={{ }} className="text-[20px]">Crew manager</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">CAMILA</h1>
+                            <h2 style={{ }} className="text-[20px]">Designer</h2>
                         </div>
-                        <img src={Gastronomia} className="object-cover h-full"/>
+                        <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/8/4/9/3/8493c7a0d3951288836e263f635f0111.jpg" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAFAEL</h1>
-                            <h2 style={{ }} className="text-[20px]">Crew manager</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">JASON</h1>
+                            <h2 style={{ }} className="text-[20px]">Photographer</h2>
                         </div>
-                        <img src={Gastronomia} className="object-cover h-full"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Jason_Momoa_by_Gage_Skidmore_2.jpg/1200px-Jason_Momoa_by_Gage_Skidmore_2.jpg" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAFAEL</h1>
-                            <h2 style={{ }} className="text-[20px]">Crew manager</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">JULIE</h1>
+                            <h2 style={{ }} className="text-[20px]">Growth</h2>
                         </div>
-                        <img src={Gastronomia} className="object-cover h-full"/>
+                        <img src="https://media.themoviedb.org/t/p/w500/6clO3lFK6dn3lBXe8zZoRNPbERr.jpg" className="object-cover h-full"/>
                     </div>
                 </div>
             </div>

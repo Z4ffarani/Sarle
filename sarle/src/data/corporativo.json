@@ -36,8 +36,8 @@
         "event": "Programa para captação de leads",
         "description": "",
         "videocase": "",
-        "photography": [],
-        "verticals": []
+        "photography": "",
+        "verticals": ""
     },
     {
         "id": 3,
@@ -47,8 +47,8 @@
         "event": "Plataforma de cibersegurança",
         "description": "",
         "videocase": "",
-        "photography": [],
-        "verticals": []
+        "photography": "",
+        "verticals": ""
     },
     {
         "id": 4,
@@ -58,7 +58,7 @@
         "event": "Oficina de manutenção de veículos",
         "description": "",
         "videocase": "",
-        "photography": [],
+        "photography": "",
         "verticals": [
             "../../../corporativo/jcp-oficina-especializada/vertical1.mp4"
         ]
