@@ -5,6 +5,7 @@ import Whatsapp from '../components/Whatsapp.jsx'
 import { BiSolidLeftArrow } from "react-icons/bi"
 import { BiSolidRightArrow } from "react-icons/bi"
 
+import Logo from '../../public/logo-sarle.png'
 import Corporativo from '../data/corporativo.json'
 import Gastronomia from '../data/gastronomia.json'
 import Moda from '../data/moda.json'
@@ -67,8 +68,8 @@ export default function Home() {
         '../../../clientes/zoom-academy.png',
     ]
     const Depoimentos = [
-        'https://www.youtube.com/embed/BaUcksguNcM',
         'https://www.youtube.com/embed/3P8_2n6QwIU',
+        'https://www.youtube.com/embed/BaUcksguNcM',
         'https://www.youtube.com/embed/06imQmfnSa8',
         'https://www.youtube.com/embed/zP68uMv2Fj4',
         'https://www.youtube.com/embed/I9Ek_Ffk4ds'
@@ -103,10 +104,10 @@ export default function Home() {
                         />
 
                         <div className='w-full flex flex-col justify-center items-center absolute mt-[-300px] lg:mt-[-380px] xl:mt-[-550px] 2xl:mt-[-650px]'>
-                            <h1 style={{ fontFamily: 'airbus' }} className={`hidden md:block text-[50px] lg:text-[70px] xl:text-[100px] text-white font-light select-none transition-all duration-1000 ease-out ${scrolled ? 'opacity-0 scale-[70%] md:mt-[-50px] lg:mt-[-400px]' : 'opacity-100'}`}>SARLE PRODUÇÕES</h1>
+                            <img src={Logo} alt="Logo" className={`transition duration-500 ease hidden sm:block sm:h-[300px] mt-[-100px] select-none ${scrolled ? 'translate-y-[-50px] opacity-0' : 'opacity-100'}`}/>
                             
                             <Link to='/sobre nós' style={{ fontFamily: 'airbus' }}
-                                className={`hidden md:block md:mt-8 lg:mt-10 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[300px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] py-[15px] rounded-full border-[3px] border-designRed hover:border-white ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
+                                className={`hidden md:block md:mt-12 lg:mt-14 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[300px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] py-[15px] rounded-full border-[3px] border-designRed hover:border-white ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
                                 SOBRE NÓS
                             </Link>
                         </div>

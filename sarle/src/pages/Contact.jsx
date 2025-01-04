@@ -36,8 +36,8 @@ export default function Contact() {
 
     const [videoDepoimento, setVideoDepoimento] = useState(0)
     const Depoimentos = [
-        'https://www.youtube.com/embed/BaUcksguNcM',
         'https://www.youtube.com/embed/3P8_2n6QwIU',
+        'https://www.youtube.com/embed/BaUcksguNcM',
         'https://www.youtube.com/embed/06imQmfnSa8',
         'https://www.youtube.com/embed/zP68uMv2Fj4',
         'https://www.youtube.com/embed/I9Ek_Ffk4ds'

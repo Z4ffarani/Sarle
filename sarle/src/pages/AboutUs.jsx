@@ -80,7 +80,7 @@ export default function AboutUs() {
                 </div>
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
                     <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        A fotografia profissional é outro pilar fundamental no portfólio da Sarle, oferecendo capturas que vão além de simples imagens. Cada clique é planejado para transmitir a essência e os valores da marca, destacando seus diferenciais de forma autêntica e impactante. Seja para campanhas publicitárias, registros institucionais ou momentos únicos, a Sarle se dedica a transformar cada foto em uma história que conecta marcas a seus públicos de maneira inesquecível. Com uma equipe experiente e criativa, a Sarle continua a moldar o mercado audiovisual, entregando resultados que unem estratégia, beleza e emoção em cada detalhe.
+                        A fotografia profissional é outro pilar fundamental no portfólio da Sarle, oferecendo várias capturas que vão além de simples imagens. Cada clique é planejado para transmitir a essência e os valores da marca, destacando seus diferenciais de forma autêntica e impactante. Seja para campanhas publicitárias, registros institucionais ou momentos únicos, a Sarle se dedica a transformar cada foto em uma história que conecta marcas a seus públicos de maneira inesquecível. Com uma equipe experiente e criativa, a Sarle continua a moldar o mercado audiovisual, entregando resultados que unem estratégia, beleza e emoção em cada detalhe.
                     </p>
                 </div>
             </div>
