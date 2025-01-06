@@ -104,7 +104,7 @@ export default function Home() {
                         />
 
                         <div className='w-full flex flex-col justify-center items-center absolute mt-[-300px] lg:mt-[-380px] xl:mt-[-550px] 2xl:mt-[-650px]'>
-                            <img src={Logo} alt="Logo" className={`transition duration-500 ease hidden sm:block sm:h-[300px] mt-[-100px] select-none ${scrolled ? 'translate-y-[-50px] opacity-0' : 'opacity-100'}`}/>
+                            <img src={Logo} alt="Logo" className={`transition duration-500 ease hidden sm:block sm:h-[200px] mt-[-100px] select-none ${scrolled ? 'translate-y-[-50px] opacity-0' : 'opacity-100'}`}/>
                             
                             <Link to='/sobre nós' style={{ fontFamily: 'airbus' }}
                                 className={`hidden md:block md:mt-12 lg:mt-14 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[300px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] py-[15px] rounded-full border-[3px] border-designRed hover:border-white ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
