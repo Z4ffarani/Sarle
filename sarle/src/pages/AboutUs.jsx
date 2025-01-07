@@ -1,9 +1,8 @@
 import Whatsapp from "../components/Whatsapp"
 
 import Selfie from '../../public/sobre-nós/selfie-sarle.png'
-import Corporativo from '../../public/sobre-nós/corporativo.jpg'
-import Moda from '../../public/sobre-nós/moda.png'
-import Gastronomia from '../../public/sobre-nós/gastronomia.jpg'
+import Imagem2 from '../../public/sobre-nós/imagem-2.png'
+import Imagem3 from '../../public/sobre-nós/imagem-3.png'
 
 import Video from '../../public/sobre-nós/background.mp4'
 
@@ -32,7 +31,7 @@ export default function AboutUs() {
             <div className="z-40 relative flex flex-col gap-12 xl:flex-row items-center justify-center pt-14 px-5">
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[69%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
                     <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        A Sarle, fundada em 2016 na dinâmica cidade de São Paulo, nasceu com a missão de contar histórias de maneira única e envolvente através do audiovisual. Desde seus primeiros passos, a empresa tem se destacado por sua paixão em transformar ideias em narrativas visuais marcantes, capturando emoções e criando conexões duradouras. Ao longo dos anos, a Sarle construiu uma reputação sólida como parceira criativa para marcas que desejam se destacar no mercado, combinando inovação e excelência em todos os projetos que realiza. Cada produção reflete um compromisso inabalável com a qualidade e o desejo de emocionar, inspirar e conquistar públicos.
+                        Criada em 2016 por Raphael Sarle, a empresa começou na área de comunicação e Marketing realizando trabalhos para marcas e empresas na área de vídeo, fotografia e conteúdo para redes sociais. Hoje a Sarle está estruturada em produzir conteúdos com a maior qualidade possível, sem fugir da identidade, conceito e cultura do seu negócio. Com formação em Publicidade e Gestão de Marketing, o workflow da Sarle tem como objetivo produzir conteúdos que tragam conversão e posicionamento dos nossos clientes e assim obter sucesso.
                     </p>
                 </div>
                 <div className="flex flex-col">
@@ -46,13 +45,25 @@ export default function AboutUs() {
             <div className="z-40 flex flex-col-reverse gap-12 xl:flex-row items-center px-5 justify-center">
                 <div className="overflow-hidden xl:w-[700px] rounded-lg">
                     <img
-                        src={Corporativo}
+                        src={Imagem2}
                         className="object-cover w-full h-[380px]"
                     />
                 </div>
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
                     <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        A essência da Sarle está em sua missão de transformar marcas e posicioná-las estrategicamente no mercado, indo além do visual e promovendo experiências memoráveis. Para a Sarle, cada cliente é único, e cada projeto é uma oportunidade de criar algo extraordinário. Através de um profundo entendimento das necessidades e valores das empresas que atende, a Sarle desenvolve soluções personalizadas que não apenas destacam as marcas, mas também geram engajamento genuíno e fidelidade. Com foco na criação de conteúdos que encantam, a empresa se torna uma extensão dos sonhos de seus clientes, ajudando-os a alcançar novos patamares.
+                    Oferecemos produção de vídeos e filmes, desde concepção até edição, para garantir que sua mensagem seja entregue de maneira impactante.
+                        <li>Vídeos Institucionais</li>
+                        <li>Vídeos Depoimentos</li>
+                        <li>Vídeos promocionais</li>
+                        <li>Vídeos de conteúdos para redes sociais</li>
+                        <li>Vídeos de campanhas Endomarketing</li>
+                        <li>Cobertura de Eventos (Corporativos e sociais)</li>
+                        <li>Produção de Cursos completos e Vídeo Aulas</li>
+                        <li>Fotografia Profissional: Capturamos momentos preciosos e imagens impressionantes que contam histórias e destacam sua marca.</li>
+                        <li>Fotografia corporativa</li>
+                        <li>Fotografia de produtos</li>
+                        <li>Fotografia esportiva</li>
+                        <li>Cobertura de Eventos (Corporativos e sociais)</li>
                     </p>
                 </div>
             </div>
@@ -60,28 +71,16 @@ export default function AboutUs() {
             <div className="z-40 flex flex-col gap-12 xl:flex-row items-center px-5 justify-center">
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
                     <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        A essência da Sarle está em sua missão de transformar marcas e posicioná-las estrategicamente no mercado, indo além do visual e promovendo experiências memoráveis. Para a Sarle, cada cliente é único, e cada projeto é uma oportunidade de criar algo extraordinário. Através de um profundo entendimento das necessidades e valores das empresas que atende, a Sarle desenvolve soluções personalizadas que não apenas destacam as marcas, mas também geram engajamento genuíno e fidelidade. Com foco na criação de conteúdos que encantam, a empresa se torna uma extensão dos sonhos de seus clientes, ajudando-os a alcançar novos patamares.
+                        Trabalhamos e treinamos profissionais para atender de uma forma padronizada e alinhada com nossa cultura e valores, focando na dedicação para atender o seu projeto com máxima perfeição e realizar uma entrega 100% eficaz.
+                        
+                        Nossa equipe contém: Videomakers, fotógrafos, assistentes de produção, produtores gerais, pilotos de drone e editores.
                     </p>
                 </div>
                 <div className="overflow-hidden xl:w-[700px] rounded-lg">
                     <img
-                        src={Moda}
+                        src={Imagem3}
                         className="object-cover w-full h-[380px]"
                     />
-                </div>
-            </div>
-
-            <div className="z-40 flex flex-col-reverse gap-12 xl:flex-row items-center px-5 justify-center">
-                <div className="overflow-hidden xl:w-[700px] rounded-lg">
-                    <img
-                        src={Gastronomia}
-                        className="object-cover w-full h-[380px]"
-                    />
-                </div>
-                <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
-                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        A fotografia profissional é outro pilar fundamental no portfólio da Sarle, oferecendo várias capturas que vão além de simples imagens. Cada clique é planejado para transmitir a essência e os valores da marca, destacando seus diferenciais de forma autêntica e impactante. Seja para campanhas publicitárias, registros institucionais ou momentos únicos, a Sarle se dedica a transformar cada foto em uma história que conecta marcas a seus públicos de maneira inesquecível. Com uma equipe experiente e criativa, a Sarle continua a moldar o mercado audiovisual, entregando resultados que unem estratégia, beleza e emoção em cada detalhe.
-                    </p>
                 </div>
             </div>
 
@@ -91,38 +90,24 @@ export default function AboutUs() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAFAEL</h1>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAPHAEL</h1>
                             <h2 style={{ }} className="text-[20px]">CEO</h2>
                         </div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77Gs7w4wwl7vSWPLrfrjva3emhw9IYLoQIA&s" className="object-cover h-full"/>
+                        <img src="../../public/sobre-nós/equipe/raphael.png" className="object-cover h-full rounded-tl-xl rounded-bl-xl"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">LEONARDO</h1>
-                            <h2 style={{ }} className="text-[20px]">Endorser</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">LAÍS</h1>
+                            <h2 style={{ }} className="text-[20px]">Fotógrafa</h2>
                         </div>
-                        <img src="https://mim.p7s1.io/pis/ld/b324zChLCVyZ-c1vEwXZAanB-DJ78rnq2V2gRWTHzVV6NywNWMSJCEGmZ4YSENP-WRL0b9lo2z78G9xHvUNf6-v3GkS17Xq6Ngi3X88gR6aFnJpo707iGlklQ2iDFZevNqtgiG86mWA/profile:original?rect=1151%2C0%2C2711%2C2711&w=400" className="object-cover h-full"/>
+                        <img src="../../public/sobre-nós/equipe/lais.png" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">CAMILA</h1>
-                            <h2 style={{ }} className="text-[20px]">Designer</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">DANILO</h1>
+                            <h2 style={{ }} className="text-[20px]">Assistente</h2>
                         </div>
-                        <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/8/4/9/3/8493c7a0d3951288836e263f635f0111.jpg" className="object-cover h-full"/>
-                    </div>
-                    <div className="w-[280px] h-[500px]">
-                        <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">JASON</h1>
-                            <h2 style={{ }} className="text-[20px]">Photographer</h2>
-                        </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Jason_Momoa_by_Gage_Skidmore_2.jpg/1200px-Jason_Momoa_by_Gage_Skidmore_2.jpg" className="object-cover h-full"/>
-                    </div>
-                    <div className="w-[280px] h-[500px]">
-                        <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">JULIE</h1>
-                            <h2 style={{ }} className="text-[20px]">Growth</h2>
-                        </div>
-                        <img src="https://media.themoviedb.org/t/p/w500/6clO3lFK6dn3lBXe8zZoRNPbERr.jpg" className="object-cover h-full"/>
+                        <img src="../../public/sobre-nós/equipe/danilo.png" className="object-cover h-full"/>
                     </div>
                 </div>
             </div>

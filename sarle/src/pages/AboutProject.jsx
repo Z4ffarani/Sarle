@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import Corporativo from '../data/corporativo.json'
 import Moda from '../data/moda.json'
@@ -33,11 +33,24 @@ export default function AboutProject() {
                   <>
                     <h1 style={{ fontFamily: 'instrument' }} className='mt-14 sm:mt-20 mb-6 text-[35px] sm:text-[50px] font-bold select-none opacity-40'>VIDEOCASE</h1>
 
-                    <video src={content.videocase}
-                      autoPlay
-                      loop
-                      muted
-                      className="mt-[-20px] mb-[60px] sm:mb-[110px] w-full lg:h-[720px] object-cover rounded-lg border-2 border-designRed z-30"
+                    <iframe
+                      src={content.videocase}
+                      
+                      className="mt-[-20px] mb-[60px] sm:mb-[110px] w-full h-[250px] sm:h-[450px] lg:h-[720px] xl:h-[824px] object-cover rounded-lg border-2 border-designRed z-30"
+                    />
+                  </>
+                ) : null
+              }
+
+              {
+                content.aftermovie ? (
+                  <>
+                    <h1 style={{ fontFamily: 'instrument' }} className='mb-6 text-[35px] sm:text-[50px] font-bold select-none opacity-40'>AFTERMOVIE</h1>
+
+                    <iframe
+                      src={content.aftermovie}
+                      
+                      className="mt-[-20px] mb-[60px] sm:mb-[110px] w-full h-[250px] sm:h-[450px] lg:h-[720px] xl:h-[824px] object-cover rounded-lg border-2 border-designRed z-30"
                     />
                   </>
                 ) : null
@@ -46,14 +59,12 @@ export default function AboutProject() {
               {
                 content.photography ? (
                   <>
-                    <h1 style={{ fontFamily: 'instrument' }} className='text-[35px] sm:text-[50px] mb-1 font-bold select-none opacity-40'>FOTOGRAFIA</h1>
+                    <h1 style={{ fontFamily: 'instrument' }} className={`${content.videocase ? '' : 'mt-14'} text-[35px] sm:text-[50px] mb-1 font-bold select-none opacity-40`}>FOTOGRAFIA</h1>
 
                     <div className='masonry mb-[60px] sm:mb-[110px]' style={{ columnCount: 3, columnGap: '0px' }}>
                       {
                         content.photography.map(photo => (
-                          <Link to={photo}>
-                            <img src={photo} className='break-inside-avoid' />
-                          </Link>
+                          <img src={photo} className='break-inside-avoid' />
                         ))
                       }
                     </div>
@@ -72,21 +83,21 @@ export default function AboutProject() {
 
             {
               content.verticals ? (
-                <div className='flex w-full flex-col lg:flex-row justify-center items-center mb-20 gap-10 lg:gap-5 xl:gap-24'>
-                  {
-                    content.verticals.map(video => (
-                      <div className='flex justify-center items-center h-[480px] w-[280px] sm:h-[700px] sm:w-[600px] lg:h-[550px] lg:w-[315px]'>
-                        <video src={video}
-                          autoPlay
-                          loop
-                          muted
-                          className="z-[-999] absolute w-[280px] sm:w-[400px] scale-[95%] lg:scale-[75%] rounded-[50px]"
-                        />
-                        
-                        <img src={Cellphone} className='w-[280px] sm:w-[400px] h-[100%]'/>
-                      </div>              
-                    ))
-                  }
+                <div className='flex justify-center items-center w-full'>
+                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-${content.verticals.length == 1 ? '1' : content.verticals.length == 2 ? '2' : content.verticals.length >= 3 ? '3' : '4'} mb-20 gap-10 lg:gap-5 xl:gap-24`}>
+                    {
+                      content.verticals.map(video => (
+                        <div className='flex justify-center items-center h-[480px] w-[280px] sm:h-[700px] sm:w-[600px] lg:h-[550px] lg:w-[315px]'>
+                          <iframe src={video}
+
+                            className="z-[-999] absolute w-[280px] h-[500px] rounded-[20px] sm:h-[705px] sm:w-[400px] scale-[93%] sm:scale-[95%] sm:rounded-[50px] lg:scale-[75%]"
+                          />
+                          
+                          <img src={Cellphone} className='w-[280px] sm:w-[400px] h-[100%]'/>
+                        </div>              
+                      ))
+                    }
+                  </div>
                 </div>
               ) : null
             }

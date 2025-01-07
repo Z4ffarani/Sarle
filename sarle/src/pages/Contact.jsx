@@ -115,11 +115,11 @@ export default function Contact() {
             </div>
 
             <div className="mx-5 z-10 flex justify-center sm:pt-12 overflow-hidden">
-                <img className="brightness-[40%] hover:brightness-100 transition duration-700 ease w-[500px] sm:w-[960px] lg:h-[500px] rounded-lg" src="https://cdn.pixabay.com/photo/2023/01/18/13/09/camera-7726802_1280.jpg"/>
+                <img className="brightness-[40%] hover:brightness-100 transition duration-700 ease w-[500px] sm:w-[960px] lg:h-[500px] rounded-lg" src="../contato/imagem-1.png"/>
             </div>
 
             <div className="mx-5 z-10 hidden 2xl:flex justify-center overflow-hidden mb-[80px]">
-                <img className="brightness-[40%] hover:brightness-100 transition duration-700 w-[500px] h-[460px] sm:w-[960px] rounded-lg" src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGlvfGVufDB8fDB8fHww"/>
+                <img className="brightness-[40%] hover:brightness-100 transition duration-700 w-[500px] h-[460px] sm:w-[960px] rounded-lg" src="https://cdn.pixabay.com/photo/2023/01/18/13/09/camera-7726802_1280.jpg"/>
             </div>
         </div>
     )

@@ -42,7 +42,7 @@ export default function Header() {
             <header className='flex items-center justify-between w-full pt-[28px] pl-[40px] transition duration-200 ease'>
                 <div className='flex flex-row justify-center items-center w-full sm:ml-[30px] md:ml-[95px]'>
                     <img src={Logo} alt="Logo" className={`transition duration-500 ease hidden sm:block sm:h-[60px] select-none ${scrolled ? 'opacity-100' : 'opacity-0'}`}/>
-                    <h1 style={{ fontFamily: 'airbus' }} className={`text-[18px] sm:text-[25px] md:text-[25px] pl-3 text-white font-light select-none transition-all duration-500 ease ${scrolled ? 'scale-100' : 'pr-12 scale-125'}`}>SARLE PRODUÇÕES</h1>
+                    <h1 style={{ fontFamily: 'airbus' }} className={`text-[15px] sm:text-[25px] md:text-[25px] pl-3 text-white font-light select-none transition-all duration-500 ease ${scrolled ? 'scale-100' : 'sm:pr-12 scale-125'}`}>SARLE PRODUÇÕES</h1>
                 </div>
             
                 <Link to={'/contato'} style={{ fontFamily: 'instrument' }} className='hidden sm:block text-white px-5 py-[10px] border-2 rounded-full bg-transparent mr-5 text-[20px] hover:bg-designRed transition-all duration-300 ease active:scale-90 font-medium'>Contato</Link>

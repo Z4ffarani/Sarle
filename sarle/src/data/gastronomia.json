@@ -1,13 +1,69 @@
 [
     {
-        "id": 10,
+        "id": 100,
         "category": "gastronomia",
-        "title": "Gastronomia",
-        "image": "https://wordpress-cms-revista-prod-assets.quero.space/uploads/2024/10/2150690631-2.jpg",
-        "event": "",
-        "description": "",
-        "videocase": "",
-        "photography": "",
-        "verticals": ""
+        "title": "Rústico Bar",
+        "image": "?",
+        "event": "?",
+        "description": "?",
+        "photography": [
+            "../../gastronomia/rustico-bar/fotos/1.webp",
+            "../../gastronomia/rustico-bar/fotos/2.webp",
+            "../../gastronomia/rustico-bar/fotos/3.webp",
+            "../../gastronomia/rustico-bar/fotos/4.webp",
+            "../../gastronomia/rustico-bar/fotos/5.webp",
+            "../../gastronomia/rustico-bar/fotos/6.webp",
+            "../../gastronomia/rustico-bar/fotos/7.webp",
+            "../../gastronomia/rustico-bar/fotos/8.webp"
+        ]
+    },
+
+    {
+        "id": 200,
+        "category": "gastronomia",
+        "title": "Chico Restaurante",
+        "image": "?",
+        "event": "?",
+        "description": "?",
+        "photography": [
+            "../../gastronomia/chico-restaurante/fotos/1.webp",
+            "../../gastronomia/chico-restaurante/fotos/2.webp",
+            "../../gastronomia/chico-restaurante/fotos/3.webp",
+            "../../gastronomia/chico-restaurante/fotos/4.webp",
+            "../../gastronomia/chico-restaurante/fotos/5.webp",
+            "../../gastronomia/chico-restaurante/fotos/6.webp",
+            "../../gastronomia/chico-restaurante/fotos/7.webp",
+            "../../gastronomia/chico-restaurante/fotos/8.webp",
+            "../../gastronomia/chico-restaurante/fotos/9.webp",
+            "../../gastronomia/chico-restaurante/fotos/10.webp",
+            "../../gastronomia/chico-restaurante/fotos/11.webp",
+            "../../gastronomia/chico-restaurante/fotos/12.webp",
+            "../../gastronomia/chico-restaurante/fotos/13.webp",
+            "../../gastronomia/chico-restaurante/fotos/14.webp"
+        ],
+        "verticals": [
+            "https://www.youtube.com/embed/wrt9e5FOSsw?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=wrt9e5FOSsw",
+            "https://www.youtube.com/embed/C097ys6fUhA?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=C097ys6fUhA",
+            "https://www.youtube.com/embed/wOq3vQacs-Y?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=wOq3vQacs-Y",
+            "https://www.youtube.com/embed/uoZU1A_zllQ?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=uoZU1A_zllQ"
+        ]
+    },
+
+    {
+        "id": 300,
+        "category": "gastronomia",
+        "title": "Absoluto Bar",
+        "image": "?",
+        "event": "?",
+        "description": "?",
+        "photography": [
+            "../../gastronomia/absoluto-bar/fotos/1.webp",
+            "../../gastronomia/absoluto-bar/fotos/2.webp",
+            "../../gastronomia/absoluto-bar/fotos/3.webp",
+            "../../gastronomia/absoluto-bar/fotos/4.webp",
+            "../../gastronomia/absoluto-bar/fotos/5.webp",
+            "../../gastronomia/absoluto-bar/fotos/6.webp",
+            "../../gastronomia/absoluto-bar/fotos/7.webp"
+        ]
     }
 ]
