@@ -64,6 +64,7 @@ export default function Home() {
         '../../../clientes/b4u.png',
         '../../../clientes/circuito-steam.png',
         '../../../clientes/shamah.png',
+        '../../../clientes/base-spp-pisos.png',
         '../../../clientes/usebeyoo.png',
         '../../../clientes/zoom-propaganda.png',
     ]

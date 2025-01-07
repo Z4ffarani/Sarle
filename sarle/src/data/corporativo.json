@@ -100,21 +100,21 @@
     {
         "id": 4,
         "category": "corporativo",
-        "title": "Base SSP Pisos",
+        "title": "Base SPP Pisos",
         "image": "?",
         "event": "?",
         "description": "?",
         "videocase": "https://www.youtube.com/embed/GMqqZPltVfk?si=_FOhGHpKnM8tNvRz&controls=1&autoplay=1&mute=1&loop=1&rel=0&playlist=GMqqZPltVfk",
         "photography": [
-            "../../corporativo/base-ssp-pisos/fotos/1.webp",
-            "../../corporativo/base-ssp-pisos/fotos/2.webp",
-            "../../corporativo/base-ssp-pisos/fotos/3.webp",
-            "../../corporativo/base-ssp-pisos/fotos/4.webp",
-            "../../corporativo/base-ssp-pisos/fotos/5.webp",
-            "../../corporativo/base-ssp-pisos/fotos/6.webp",
-            "../../corporativo/base-ssp-pisos/fotos/7.webp",
-            "../../corporativo/base-ssp-pisos/fotos/8.webp",
-            "../../corporativo/base-ssp-pisos/fotos/9.webp"
+            "../../corporativo/base-spp-pisos/fotos/1.webp",
+            "../../corporativo/base-spp-pisos/fotos/2.webp",
+            "../../corporativo/base-spp-pisos/fotos/3.webp",
+            "../../corporativo/base-spp-pisos/fotos/4.webp",
+            "../../corporativo/base-spp-pisos/fotos/5.webp",
+            "../../corporativo/base-spp-pisos/fotos/6.webp",
+            "../../corporativo/base-spp-pisos/fotos/7.webp",
+            "../../corporativo/base-spp-pisos/fotos/8.webp",
+            "../../corporativo/base-spp-pisos/fotos/9.webp"
         ]
     },
 
