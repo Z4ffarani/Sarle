@@ -20,7 +20,7 @@ export default function AboutProject() {
 
     setTimeout(() => {
       setTransition(true)
-    }, 1000)
+    }, 2000)
   }, [titulo])
 
   return (
@@ -73,7 +73,7 @@ export default function AboutProject() {
                             key={index}
                             src={photo}
                             loading='eager'
-                            className={`${transition ? 'opacity-100' : 'opacity-0'} transition-all duration-500 ease break-inside-avoid`}
+                            className={`${transition ? 'opacity-100' : 'opacity-0'} transition-all duration-1000 ease break-inside-avoid`}
                           />
                         ))
                       }
