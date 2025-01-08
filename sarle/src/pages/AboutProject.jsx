@@ -11,11 +11,16 @@ export default function AboutProject() {
   const { titulo } = useParams()
   const categories = [Corporativo, Moda, Gastronomia]
   const [content, setContent] = useState(null)
+  const [transition, setTransition] = useState(false)
 
   useEffect(() => {
     const foundContent = categories.flat().find(info => info.title === titulo)
 
     setContent(foundContent)
+
+    setTimeout(() => {
+      setTransition(true)
+    }, 1000)
   }, [titulo])
 
   return (
@@ -63,8 +68,13 @@ export default function AboutProject() {
 
                     <div className='masonry mb-[60px] sm:mb-[110px]' style={{ columnCount: 3, columnGap: '0px' }}>
                       {
-                        content.photography.map(photo => (
-                          <img src={photo} className='break-inside-avoid' />
+                        content.photography.map((photo, index) => (
+                          <img
+                            key={index}
+                            src={photo}
+                            loading='eager'
+                            className={`${transition ? 'opacity-100' : 'opacity-0'} transition-all duration-500 ease break-inside-avoid`}
+                          />
                         ))
                       }
                     </div>

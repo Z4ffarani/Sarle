@@ -93,21 +93,21 @@ export default function AboutUs() {
                             <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAPHAEL</h1>
                             <h2 style={{ }} className="text-[20px]">CEO</h2>
                         </div>
-                        <img src="../../public/sobre-nós/equipe/raphael.png" className="object-cover h-full rounded-tl-xl rounded-bl-xl"/>
+                        <img src="../../../sobre-nós/equipe/raphael.png" className="object-cover h-full rounded-tl-xl rounded-bl-xl"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
                             <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">LAÍS</h1>
                             <h2 style={{ }} className="text-[20px]">Fotógrafa</h2>
                         </div>
-                        <img src="../../public/sobre-nós/equipe/lais.png" className="object-cover h-full"/>
+                        <img src="../../../sobre-nós/equipe/lais.png" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
                             <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">DANILO</h1>
                             <h2 style={{ }} className="text-[20px]">Assistente</h2>
                         </div>
-                        <img src="../../public/sobre-nós/equipe/danilo.png" className="object-cover h-full"/>
+                        <img src="../../../sobre-nós/equipe/danilo.png" className="object-cover h-full"/>
                     </div>
                 </div>
             </div>
