@@ -52,18 +52,18 @@ export default function AboutUs() {
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
                     <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
                     Oferecemos produção de vídeos e filmes, desde concepção até edição, para garantir que sua mensagem seja entregue de maneira impactante.
-                        <li>Vídeos Institucionais</li>
-                        <li>Vídeos Depoimentos</li>
-                        <li>Vídeos promocionais</li>
-                        <li>Vídeos de conteúdos para redes sociais</li>
-                        <li>Vídeos de campanhas Endomarketing</li>
-                        <li>Cobertura de Eventos (Corporativos e sociais)</li>
-                        <li>Produção de Cursos completos e Vídeo Aulas</li>
-                        <li>Fotografia Profissional: Capturamos momentos preciosos e imagens impressionantes que contam histórias e destacam sua marca.</li>
-                        <li>Fotografia corporativa</li>
-                        <li>Fotografia de produtos</li>
-                        <li>Fotografia esportiva</li>
-                        <li>Cobertura de Eventos (Corporativos e sociais)</li>
+                        <li>Vídeos Institucionais;</li>
+                        <li>Vídeos Depoimentos;</li>
+                        <li>Vídeos promocionais;</li>
+                        <li>Vídeos de conteúdos para redes sociais;</li>
+                        <li>Vídeos de campanhas Endomarketing;</li>
+                        <li>Cobertura de Eventos (Corporativos e sociais);</li>
+                        <li>Produção de Cursos completos e Vídeo Aulas;</li>
+                        <li>Fotografia Profissional: Capturamos momentos preciosos e imagens impressionantes que contam histórias e destacam sua marca;</li>
+                        <li>Fotografia corporativa;</li>
+                        <li>Fotografia de produtos;</li>
+                        <li>Fotografia esportiva e;</li>
+                        <li>Cobertura de Eventos (Corporativos e sociais).</li>
                     </p>
                 </div>
             </div>
@@ -87,27 +87,34 @@ export default function AboutUs() {
             <h2 style={{ fontFamily: 'airbus' }} className='pt-10 sm:mb-[-30px] sm:py-16 text-white text-center text-[33px] md:text-[45px] lg:text-[60px] opacity-40 text-wrap px-5 select-none'>COM QUEM TRABALHAMOS</h2>
 
             <div className="flex justify-center mx-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
                             <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAPHAEL</h1>
                             <h2 style={{ }} className="text-[20px]">CEO</h2>
                         </div>
-                        <img src="../../../sobre-nós/equipe/raphael.png" className="object-cover h-full rounded-tl-xl rounded-bl-xl"/>
+                        <img src="../../../sobre-nós/equipe/raphael-ceo.png" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">LAÍS</h1>
-                            <h2 style={{ }} className="text-[20px]">Fotógrafa</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">CAROL</h1>
+                            <h2 style={{ }} className="text-[20px]">Mobile</h2>
                         </div>
-                        <img src="../../../sobre-nós/equipe/lais.png" className="object-cover h-full"/>
+                        <img src="../../../sobre-nós/equipe/carol-mobile.png" className="object-cover h-full"/>
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">DANILO</h1>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">PEDRO</h1>
+                            <h2 style={{ }} className="text-[20px]">Editor</h2>
+                        </div>
+                        <img src="../../../sobre-nós/equipe/pedro-editor.png" className="object-cover h-full"/>
+                    </div>
+                    <div className="w-[280px] h-[500px]">
+                        <div className="absolute p-5 mt-[380px] text-white">
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">VICTOR</h1>
                             <h2 style={{ }} className="text-[20px]">Assistente</h2>
                         </div>
-                        <img src="../../../sobre-nós/equipe/danilo.png" className="object-cover h-full"/>
+                        <img src="../../../sobre-nós/equipe/victor-assistente.png" className="object-cover h-full"/>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ export default function Footer() {
     const anoAtual = new Date().getFullYear()
 
     return (
-        <div className="select-none absolute w-full flex justify-center md:justify-between px-20 items-center mt-10 h-[90px] bg-designRed">
+        <div className="select-none absolute w-full flex justify-center md:justify-between px-20 items-center mt-10 h-[90px] bg-gradient-to-t from-designRed to-transparent">
             <img src={Logo} alt="Ícone do TRIO SAMPA" className="h-[60px] hidden lg:block"/>
             <h1 style={{ fontFamily: 'instrument' }} className="hidden md:block md:text-[15px] lg:text-[17px] lg:pl-[150px] text-white">Copyright © {anoAtual} SARLE • Todos os direitos reservados</h1>
             <div className="flex items-center gap-6">
