@@ -29,9 +29,9 @@
             "../../corporativo/atlanta/fotos/19.webp"
         ],
         "verticals": [
-            "https://www.youtube.com/embed/-5CyKIpheJA?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=-5CyKIpheJA",
-            "https://www.youtube.com/embed/8RjePV_CQH8?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=8RjePV_CQH8",
-            "https://www.youtube.com/embed/M4fmZF6_zfE?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=M4fmZF6_zfE"
+            "https://www.youtube.com/embed/-5CyKIpheJA?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=-5CyKIpheJA",
+            "https://www.youtube.com/embed/8RjePV_CQH8?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=8RjePV_CQH8",
+            "https://www.youtube.com/embed/M4fmZF6_zfE?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=M4fmZF6_zfE"
         ]
     },
 
@@ -60,9 +60,9 @@
             "../../corporativo/construsato/fotos/14.webp"
         ],
         "verticals": [
-            "https://www.youtube.com/embed/YvxdJp0ic5I?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=YvxdJp0ic5I",
-            "https://www.youtube.com/embed/9lCW-kyj7_Y?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=9lCW-kyj7_Y",
-            "https://www.youtube.com/embed/56FnjfOuKSI?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=56FnjfOuKSI"
+            "https://www.youtube.com/embed/YvxdJp0ic5I?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=YvxdJp0ic5I",
+            "https://www.youtube.com/embed/9lCW-kyj7_Y?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=9lCW-kyj7_Y",
+            "https://www.youtube.com/embed/56FnjfOuKSI?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=56FnjfOuKSI"
         ]
     },
 
@@ -92,8 +92,8 @@
             "../../corporativo/circuito-steam/fotos/14.webp"
         ],
         "verticals": [
-            "https://www.youtube.com/embed/_53cTvqdIwo?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=_53cTvqdIwo",
-            "https://www.youtube.com/embed/bJEVEtbEpNE?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=1&mute=1&loop=1&rel=0&playlist=bJEVEtbEpNE"
+            "https://www.youtube.com/embed/_53cTvqdIwo?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=_53cTvqdIwo",
+            "https://www.youtube.com/embed/bJEVEtbEpNE?si=3b1b1e4e4b7b4b4b&controls=0&autoplay=0&mute=0&loop=1&rel=0&playlist=bJEVEtbEpNE"
         ]
     },
 
@@ -216,8 +216,7 @@
             "../../corporativo/first/fotos/13.webp",
             "../../corporativo/first/fotos/14.webp",
             "../../corporativo/first/fotos/15.webp",
-            "../../corporativo/first/fotos/16.webp",
-            "../../corporativo/first/fotos/17.webp"
+            "../../corporativo/first/fotos/16.webp"
         ],
         "verticals": [
             "../../corporativo/first/short.mp4"

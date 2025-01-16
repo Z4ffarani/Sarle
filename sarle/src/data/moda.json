@@ -20,7 +20,7 @@
             "../../moda/fr/fotos/10.webp"
         ],
         "verticals": [
-            "https://www.youtube.com/embed/E4Ncr6nX7bc?&autoplay=1&mute=1&loop=1&rel=0&playlist=E4Ncr6nX7bc"
+            "https://www.youtube.com/embed/E4Ncr6nX7bc?&autoplay=0&mute=0&loop=1&rel=0&playlist=E4Ncr6nX7bc"
         ]
     },
 
@@ -32,13 +32,13 @@
         "event": "?",
         "description": "?",
         "verticals": [
-            "https://www.youtube.com/embed/nHWBo6whSyU?&autoplay=1&mute=1&loop=1&rel=0&playlist=nHWBo6whSyU",
-            "https://www.youtube.com/embed/1kFaawNHdWk?&autoplay=1&mute=1&loop=1&rel=0&playlist=1kFaawNHdWk",
-            "https://www.youtube.com/embed/dE0DUqbF8Ss?&autoplay=1&mute=1&loop=1&rel=0&playlist=dE0DUqbF8Ss",
-            "https://www.youtube.com/embed/4pEbtNqRknk?&autoplay=1&mute=1&loop=1&rel=0&playlist=4pEbtNqRknk",
-            "https://www.youtube.com/embed/UCGqa9-N1K0?&autoplay=1&mute=1&loop=1&rel=0&playlist=UCGqa9-N1K0",
-            "https://www.youtube.com/embed/WUREh55IcK4?&autoplay=1&mute=1&loop=1&rel=0&playlist=WUREh55IcK4",
-            "https://www.youtube.com/embed/JGQ6ycIew5I?&autoplay=1&mute=1&loop=1&rel=0&playlist=JGQ6ycIew5I"
+            "https://www.youtube.com/embed/nHWBo6whSyU?&autoplay=0&mute=0&loop=1&rel=0&playlist=nHWBo6whSyU",
+            "https://www.youtube.com/embed/1kFaawNHdWk?&autoplay=0&mute=0&loop=1&rel=0&playlist=1kFaawNHdWk",
+            "https://www.youtube.com/embed/dE0DUqbF8Ss?&autoplay=0&mute=0&loop=1&rel=0&playlist=dE0DUqbF8Ss",
+            "https://www.youtube.com/embed/4pEbtNqRknk?&autoplay=0&mute=0&loop=1&rel=0&playlist=4pEbtNqRknk",
+            "https://www.youtube.com/embed/UCGqa9-N1K0?&autoplay=0&mute=0&loop=1&rel=0&playlist=UCGqa9-N1K0",
+            "https://www.youtube.com/embed/WUREh55IcK4?&autoplay=0&mute=0&loop=1&rel=0&playlist=WUREh55IcK4",
+            "https://www.youtube.com/embed/JGQ6ycIew5I?&autoplay=0&mute=0&loop=1&rel=0&playlist=JGQ6ycIew5I"
         ]
     }
 ]
