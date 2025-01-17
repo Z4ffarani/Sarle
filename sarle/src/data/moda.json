@@ -3,7 +3,7 @@
         "id": 10,
         "category": "moda",
         "title": "FR",
-        "image": "?",
+        "image": "../../moda/fr/banner.png",
         "event": "?",
         "description": "?",
         "videocase": "https://www.youtube.com/embed/GJMunv2HnCo?si=VetXkrmu2BPtkDL_&controls=1&autoplay=1&mute=1&loop=1&rel=0&playlist=GJMunv2HnCo",
@@ -28,7 +28,7 @@
         "id": 20,
         "category": "moda",
         "title": "Belart",
-        "image": "?",
+        "image": "../../moda/belart/banner.png",
         "event": "?",
         "description": "?",
         "verticals": [

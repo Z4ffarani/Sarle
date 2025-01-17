@@ -3,7 +3,7 @@
         "id": 100,
         "category": "gastronomia",
         "title": "Rústico Bar",
-        "image": "?",
+        "image": "../../gastronomia/rustico-bar/banner.png",
         "event": "?",
         "description": "?",
         "photography": [
@@ -22,7 +22,7 @@
         "id": 200,
         "category": "gastronomia",
         "title": "Chico Restaurante",
-        "image": "?",
+        "image": "../../gastronomia/chico-restaurante/banner.png",
         "event": "?",
         "description": "?",
         "photography": [
@@ -53,7 +53,7 @@
         "id": 300,
         "category": "gastronomia",
         "title": "Absoluto Bar",
-        "image": "?",
+        "image": "../../gastronomia/absoluto-bar/banner.png",
         "event": "?",
         "description": "?",
         "photography": [

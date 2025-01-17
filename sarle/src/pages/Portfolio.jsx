@@ -44,7 +44,7 @@ export default function Portfolio() {
                     MODA
                 </NavLink>
                 <NavLink 
-                    to="/portfólio/gastronomia" 
+                    to="/portfólio/gastronomia"
                     className={({ isActive }) => 
                         `scale-95 hover:opacity-100 transition-all duration-300 ${isActive ? "opacity-100 sm:scale-105" : "opacity-50"}`
                     }
