@@ -91,12 +91,12 @@ export default function AboutProject() {
             {
               content.verticals ? (
                 <div className='flex justify-center items-center w-full'>
-                  <div className={`grid sm:grid-cols-1 md:grid-cols-${content.verticals.length == 1 ? '1' : '2'} lg:grid-cols-${content.verticals.length == 1 ? '1' : content.verticals.length == 2 ? '2' : content.verticals.length >= 3 ? '3' : '4'} mb-20 gap-10 lg:gap-5 xl:gap-24`}>
+                  <div className={`grid sm:grid-cols-1 lg:grid-cols-3 mb-20 gap-10 lg:gap-5 xl:gap-24`}>
                     {
-                      content.verticals.map(video => (
-                        <div className='flex justify-center items-center h-[480px] w-[280px] sm:h-[700px] sm:w-[600px] lg:h-[550px] lg:w-[315px]'>
-                          <iframe src={video}
-
+                      content.verticals.map((video, index) => (
+                        <div key={index} className='flex justify-center items-center h-[480px] w-[280px] sm:h-[700px] sm:w-[600px] lg:h-[550px] lg:w-[315px]'>
+                          <iframe
+                            src={video}
                             className="absolute w-[280px] h-[500px] rounded-[20px] sm:h-[705px] sm:w-[385px] scale-[93%] sm:scale-[95%] sm:rounded-[46px] lg:scale-[75%] pr-1"
                           />
                           
