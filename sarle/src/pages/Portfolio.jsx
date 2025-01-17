@@ -71,8 +71,6 @@ export default function Portfolio() {
                                         effect="blur"
                                         className="mb-[-6px]"
                                         threshold={10}
-                                        delayMethod='throttle'
-                                        delayTime={500}
                                     />
                                 </div>
                             </div>

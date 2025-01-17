@@ -71,8 +71,6 @@ export default function AboutProject() {
                             effect="blur"
                             className='break-inside-avoid mb-[-6px]'
                             threshold={10}
-                            delayMethod='throttle'
-                            delayTime={500}
                           />
                         ))
                       }
@@ -93,7 +91,7 @@ export default function AboutProject() {
             {
               content.verticals ? (
                 <div className='flex justify-center items-center w-full'>
-                  <div className={`grid sm:grid-cols-1 md:grid-cols-${content.verticals.length <= 1 ? '1' : '2'} lg:grid-cols-${content.verticals.length == 1 ? '1' : content.verticals.length == 2 ? '2' : content.verticals.length >= 3 ? '3' : '4'} mb-20 gap-10 lg:gap-5 xl:gap-24`}>
+                  <div className={`grid sm:grid-cols-1 md:grid-cols-${content.verticals.length == 1 ? '1' : '2'} lg:grid-cols-${content.verticals.length == 1 ? '1' : content.verticals.length == 2 ? '2' : content.verticals.length >= 3 ? '3' : '4'} mb-20 gap-10 lg:gap-5 xl:gap-24`}>
                     {
                       content.verticals.map(video => (
                         <div className='flex justify-center items-center h-[480px] w-[280px] sm:h-[700px] sm:w-[600px] lg:h-[550px] lg:w-[315px]'>
