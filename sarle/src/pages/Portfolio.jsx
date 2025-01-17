@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { Link, NavLink, useParams } from "react-router-dom"
 import Whatsapp from "../components/Whatsapp"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import Corporativo from '../data/corporativo.json'
 import Moda from '../data/moda.json'
@@ -63,7 +65,16 @@ export default function Portfolio() {
                                     <h2 style={{ fontFamily: 'instrument' }} className='text-white text-[17px] lg:text-[20px] opacity-0 lg:group-hover:opacity-100 transition duration-500 ease'>{info.event}</h2>
                                 </div>
 
-                                <img className="h-full opacity-50 lg:opacity-100 group-hover:opacity-50 transition duration-300 ease" src={info.image}/>
+                                <div className="h-full w-full opacity-50 lg:opacity-100 group-hover:opacity-50 transition duration-300 ease">
+                                    <LazyLoadImage
+                                        src={info.image}
+                                        effect="blur"
+                                        className="mb-[-6px]"
+                                        threshold={10}
+                                        delayMethod='throttle'
+                                        delayTime={500}
+                                    />
+                                </div>
                             </div>
                         </Link>
                     ))
