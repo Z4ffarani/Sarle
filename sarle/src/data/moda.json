@@ -2,22 +2,22 @@
     {
         "id": 10,
         "category": "moda",
-        "title": "FR",
-        "image": "../../moda/fr/banner.png",
+        "title": "FRSTYLE",
+        "image": "../../moda/frstyle/banner.png",
         "event": "?",
         "description": "?",
         "videocase": "https://www.youtube.com/embed/GJMunv2HnCo?si=VetXkrmu2BPtkDL_&controls=1&autoplay=1&mute=1&loop=1&rel=0&playlist=GJMunv2HnCo",
         "photography": [
-            "../../moda/fr/fotos/1.webp",
-            "../../moda/fr/fotos/2.webp",
-            "../../moda/fr/fotos/3.webp",
-            "../../moda/fr/fotos/4.webp",
-            "../../moda/fr/fotos/5.webp",
-            "../../moda/fr/fotos/6.webp",
-            "../../moda/fr/fotos/7.webp",
-            "../../moda/fr/fotos/8.webp",
-            "../../moda/fr/fotos/9.webp",
-            "../../moda/fr/fotos/10.webp"
+            "../../moda/frstyle/fotos/1.webp",
+            "../../moda/frstyle/fotos/2.webp",
+            "../../moda/frstyle/fotos/3.webp",
+            "../../moda/frstyle/fotos/4.webp",
+            "../../moda/frstyle/fotos/5.webp",
+            "../../moda/frstyle/fotos/6.webp",
+            "../../moda/frstyle/fotos/7.webp",
+            "../../moda/frstyle/fotos/8.webp",
+            "../../moda/frstyle/fotos/9.webp",
+            "../../moda/frstyle/fotos/10.webp"
         ],
         "verticals": [
             "https://www.youtube.com/embed/E4Ncr6nX7bc?&autoplay=0&mute=0&loop=1&rel=0&playlist=E4Ncr6nX7bc"
@@ -27,8 +27,8 @@
     {
         "id": 20,
         "category": "moda",
-        "title": "Belart",
-        "image": "../../moda/belart/banner.png",
+        "title": "Samira Belart",
+        "image": "../../moda/samira-belart/banner.png",
         "event": "?",
         "description": "?",
         "verticals": [
