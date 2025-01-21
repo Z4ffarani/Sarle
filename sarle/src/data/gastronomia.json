@@ -65,5 +65,30 @@
             "../../gastronomia/absoluto-bar/fotos/6.webp",
             "../../gastronomia/absoluto-bar/fotos/7.webp"
         ]
+    },
+
+    {
+        "id": 400,
+        "category": "gastronomia",
+        "title": "Trino Fit",
+        "image": "../../gastronomia/trino-fit/banner.png",
+        "event": "?",
+        "description": "?",
+        "photography": [
+            "../../gastronomia/trino-fit/fotos/1.webp",
+            "../../gastronomia/trino-fit/fotos/2.webp",
+            "../../gastronomia/trino-fit/fotos/3.webp",
+            "../../gastronomia/trino-fit/fotos/4.webp",
+            "../../gastronomia/trino-fit/fotos/5.webp",
+            "../../gastronomia/trino-fit/fotos/6.webp",
+            "../../gastronomia/trino-fit/fotos/7.webp",
+            "../../gastronomia/trino-fit/fotos/8.webp",
+            "../../gastronomia/trino-fit/fotos/9.webp",
+            "../../gastronomia/trino-fit/fotos/10.webp",
+            "../../gastronomia/trino-fit/fotos/11.webp",
+            "../../gastronomia/trino-fit/fotos/12.webp",
+            "../../gastronomia/trino-fit/fotos/13.webp",
+            "../../gastronomia/trino-fit/fotos/14.webp"
+        ]
     }
 ]
