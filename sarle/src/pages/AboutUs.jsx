@@ -30,8 +30,12 @@ export default function AboutUs() {
 
             <div className="z-40 relative flex flex-col gap-12 xl:flex-row items-center justify-center pt-14 px-5">
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[69%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
-                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        Criada em 2016 por Raphael Sarle, a empresa começou na área de comunicação e Marketing realizando trabalhos para marcas e empresas na área de vídeo, fotografia e conteúdo para redes sociais. Hoje a Sarle está estruturada em produzir conteúdos com a maior qualidade possível, sem fugir da identidade, conceito e cultura do seu negócio. Com formação em Publicidade e Gestão de Marketing, o workflow da Sarle tem como objetivo produzir conteúdos que tragam conversão e posicionamento dos nossos clientes e assim obter sucesso.
+                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-center sm:text-justify">
+                        Fundada por Raphael Sarle, a SARLE nasceu para ser mais do que uma produtora audiovisual — somos parceiros estratégicos na criação de conteúdos que comunicam, conectam e convertem. Desde 2016, ajudamos empresas a fortalecerem sua presença no mercado por meio de vídeos e fotografias que destacam sua essência e valores. 
+
+                        Com um foco inicial em marketing e comunicação, hoje a SARLE se especializa na produção de vídeos institucionais, conteúdos para redes sociais e campanhas de endomarketing que traduzem a identidade de cada marca. Nosso processo combina criatividade, estratégia e a busca por resultados, trazendo valor ao posicionamento de CEOs e equipes de marketing que buscam se diferenciar no mercado. 
+
+                        Com expertise em Publicidade e Gestão de Marketing, nossa abordagem é orientada a resultados: produzimos conteúdos que não só inspiram, mas também geram conversão e engajamento para nossos clientes.
                     </p>
                 </div>
                 <div className="flex flex-col">
@@ -50,30 +54,58 @@ export default function AboutUs() {
                     />
                 </div>
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
-                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                    Oferecemos produção de vídeos e filmes, desde concepção até edição, para garantir que sua mensagem seja entregue de maneira impactante.
-                        <li>Vídeos Institucionais;</li>
-                        <li>Vídeos Depoimentos;</li>
+                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-center sm:text-justify">
+                        <p>
+                            Na SARLE, oferecemos soluções audiovisuais completas que traduzem suas ideias em mensagens impactantes, sempre alinhadas aos objetivos estratégicos da sua marca. Seja para fortalecer seu branding ou atrair novos negócios, nossos serviços são desenhados para CEOs e líderes de marketing que buscam excelência e inovação.
+                        </p>
+
+                        <br/>   
+
+                        <p className="text-[25px] sm:text-[35px]"><b>PRODUÇÃO DE VÍDEOS:</b></p>
+                        <li>Vídeos Institucionais: Apresente sua empresa de forma memorável e reforce sua autoridade no mercado.</li>
+                        <li>Depoimentos de Clientes: Humanize sua marca e inspire confiança.</li>
                         <li>Vídeos promocionais;</li>
-                        <li>Vídeos de conteúdos para redes sociais;</li>
-                        <li>Vídeos de campanhas Endomarketing;</li>
-                        <li>Cobertura de Eventos (Corporativos e sociais);</li>
-                        <li>Produção de Cursos completos e Vídeo Aulas;</li>
-                        <li>Fotografia Profissional: Capturamos momentos preciosos e imagens impressionantes que contam histórias e destacam sua marca;</li>
-                        <li>Fotografia corporativa;</li>
-                        <li>Fotografia de produtos;</li>
-                        <li>Fotografia esportiva e;</li>
-                        <li>Cobertura de Eventos (Corporativos e sociais).</li>
+                        <li>Conteúdos para Redes Sociais: Alcance seu público com materiais otimizados para engajamento.</li>
+                        <li>Endomarketing: Engaje colaboradores e fortaleça a cultura organizacional.</li>
+                        <li>Cobertura de Eventos Corporativos e Sociais: Destaque os melhores momentos de forma profissional.</li>
+                        <li>Cursos e Vídeo Aulas: Crie materiais educativos com qualidade técnica e didática.</li>
+                        
+                        <br/>
+
+                        <p className="text-[25px] sm:text-[35px]"><b>FOTOGRAFIA PROFISSIONAL:</b></p>
+                        <li>Fotografia Corporativa: Retratos institucionais que reforçam a credibilidade da sua marca.</li>
+                        <li>Fotografia de Produtos: Destaque os detalhes e a qualidade do que você oferece.</li>
+                        <li>Fotografia Esportiva: Capture emoções e movimento com precisão.</li>
+                        <li>Cobertura Fotográfica de Eventos: Registre cada detalhe de forma sofisticada.</li>
+                        
+                        <br/>
+
+                        <p>
+                            Cada projeto é executado com foco em excelência visual e impacto estratégico, garantindo que sua mensagem alcance o público certo.
+                        </p>
                     </p>
                 </div>
             </div>
 
             <div className="z-40 flex flex-col gap-12 xl:flex-row items-center px-5 justify-center">
                 <div className="flex items-center px-6 py-8 sm:px-8 sm:py-8 xl:w-[50%] z-10 border-2 border-designRed rounded-lg backdrop-blur-md">
-                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-justify">
-                        Trabalhamos e treinamos profissionais para atender de uma forma padronizada e alinhada com nossa cultura e valores, focando na dedicação para atender o seu projeto com máxima perfeição e realizar uma entrega 100% eficaz.
-                        
-                        Nossa equipe contém: Videomakers, fotógrafos, assistentes de produção, produtores gerais, pilotos de drone e editores.
+                    <p style={{ fontFamily: 'instrument', textShadow: 'black 0px 0px 10px' }} className="text-[15px] md:text-[23px] text-white text-center sm:text-justify">
+                        <p>
+                            Na SARLE, reunimos um time de especialistas apaixonados por transformar ideias em conteúdos memoráveis. Nossa equipe é composta por:
+                        </p>
+
+                        <br/>
+
+                        <li>Videomakers experientes;</li>
+                        <li>Fotógrafos especializados em retratos corporativos e produtos;</li>
+                        <li>Assistentes de produção capacitados;</li>
+                        <li>Produtores gerais;</li> 
+                        <li>Pilotos de drone licenciados;</li> 
+                        <li>Editores de vídeo altamente qualificados.</li>
+
+                        <br/>
+
+                        Nossos profissionais trabalham alinhados aos valores da SARLE, entregando projetos personalizados, com atenção aos detalhes e foco total em resultados. Seja para CEOs buscando reforçar o branding da empresa ou para líderes de marketing com demandas específicas, garantimos eficiência, criatividade e impacto em cada entrega.
                     </p>
                 </div>
                 <div className="overflow-hidden xl:w-[700px] rounded-lg">
