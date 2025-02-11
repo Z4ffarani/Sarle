@@ -62,7 +62,7 @@ export default function Portfolio() {
                             <div className="flex h-full justify-center items-center">
                                 <div className="absolute z-30 flex flex-col items-center gap-5 scale-[95%] group-hover:scale-100 transition duration-500 ease">
                                     <h1 style={{ fontFamily: 'airbus' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] opacity-100 lg:opacity-0 mb-[-20px] lg:group-hover:opacity-100 transition duration-500 ease'>{info.title}</h1>
-                                    <h2 style={{ fontFamily: 'instrument' }} className='text-white text-[17px] lg:text-[20px] opacity-0 lg:group-hover:opacity-100 transition duration-500 ease'>{info.event}</h2>
+                                    <h2 style={{ fontFamily: 'instrument' }} className='text-white text-[17px] lg:text-[20px] opacity-0 lg:group-hover:opacity-100 transition duration-500 ease text-center'>{info.event}</h2>
                                 </div>
 
                                 <div className="h-full w-full opacity-50 lg:opacity-100 group-hover:opacity-50 transition duration-300 ease">
