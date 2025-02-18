@@ -20,11 +20,8 @@ export default function AboutUs() {
             />
 
             <div className="w-full flex justify-center items-center">
-                <video src={Video}
-                    autoPlay
-                    loop
-                    muted
-                    className="m-5 mb-[-50px] scale-90 sm:w-[1200px] object-cover rounded-lg border-2 border-designRed z-30"
+                <iframe src="https://www.youtube.com/embed/YDHnYLqQGWI?si=71rYUv_LnRtA3e5u&controls=0&autoplay=1&mute=0&loop=1&rel=0&playlist=YDHnYLqQGWI"
+                    className="m-5 mb-[-50px] scale-90 w-[1000px] sm:w-[1200px] h-[200px] sm:h-[300px] md:h-[550px] lg:h-[680px] object-cover rounded-lg border-2 border-designRed z-30"
                 />
             </div>
 
