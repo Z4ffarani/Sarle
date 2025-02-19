@@ -10,6 +10,7 @@ import Gastronomia from '../data/gastronomia.json'
 import Moda from '../data/moda.json'
 
 import Image from '../../public/home/sarle-background.png'
+import VideoBackground from '../../public/home/sarle-background.mp4'
 import Video from '../../public/home/somos-a-sarle.mp4'
 
 export default function Home() {
@@ -96,7 +97,7 @@ export default function Home() {
             <div style={{ fontFamily: 'instrument ' }}>
                 <div className='h-full'>
                     <div className="overflow-hidden border-b-2 border-designRed z-50">
-                        <video src={Video}
+                        <video src={VideoBackground}
                             autoPlay
                             loop
                             muted
