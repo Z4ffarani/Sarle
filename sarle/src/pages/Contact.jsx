@@ -1,4 +1,3 @@
-import emailjs from '@emailjs/browser'
 import { useState } from "react"
 import Whatsapp from "../components/Whatsapp"
 import { BiSolidLeftArrow } from "react-icons/bi"
@@ -11,28 +10,28 @@ export default function Contact() {
     const [message, setMessage] = useState('')
 
     function sendEmail(e) {
-        e.preventDefault()
-
+        e.preventDefault();
+    
         if (email === '' || message === '') {
-            alert('Preencha todos os campos para enviar a mensagem.')
-            return
+            alert('Preencha todos os campos para enviar a mensagem.');
+            return;
         }
-
-        const templateParams = {
-            email: email,
-            message: message
-        }
-
-        emailjs.send("service_sqic02f", "template_pcraepr", templateParams, "0G1Jc6AAMc3jtTUoi")
-        .then((response) => {
-            alert("E-mail enviado! Entraremos em contato em breve.")
-            console.log("E-mail enviado", response.status, response.text)
-            setEmail('')
-            setMessage('')
-        }, (err) => {
-            console.log("Erro: ", err)
+    
+        fetch("https://sarle.com.br/send_email.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                email: email,
+                message: message
+            })
         })
-    }
+        .then(response => response.text())
+        .catch(error => console.log("Erro:", error));
+
+        alert("Mensagem enviada com sucesso!");
+    }    
 
     const [videoDepoimento, setVideoDepoimento] = useState(0)
     const Depoimentos = [

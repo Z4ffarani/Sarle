@@ -30,7 +30,7 @@ export default function Portfolio() {
 
             <div style={{ fontFamily: 'airbus' }} className="flex-col sm:flex-row flex text-white justify-center gap-5 sm:gap-10 p-5 absolute mt-[90px] sm:mt-[120px] text-[25px] w-full">
                 <NavLink 
-                    to="/portfólio/corporativo" 
+                    to="/portfolio/corporativo" 
                     className={({ isActive }) => 
                         `scale-95 hover:opacity-100 transition-all duration-300 ${isActive ? "opacity-100 sm:scale-105" : "opacity-50"}`
                     }
@@ -38,7 +38,7 @@ export default function Portfolio() {
                     CORPORATIVO
                 </NavLink>
                 <NavLink 
-                    to="/portfólio/moda" 
+                    to="/portfolio/moda" 
                     className={({ isActive }) => 
                         `scale-95 hover:opacity-100 transition-all duration-300 ${isActive ? "opacity-100 sm:scale-105" : "opacity-50"}`
                     }
@@ -46,7 +46,7 @@ export default function Portfolio() {
                     MODA
                 </NavLink>
                 <NavLink 
-                    to="/portfólio/gastronomia"
+                    to="/portfolio/gastronomia"
                     className={({ isActive }) => 
                         `scale-95 hover:opacity-100 transition-all duration-300 ${isActive ? "opacity-100 sm:scale-105" : "opacity-50"}`
                     }
@@ -58,7 +58,7 @@ export default function Portfolio() {
             <div className="pt-[300px] sm:pt-[220px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {
                     content.map(info => (
-                        <Link to={`/portfólio/${info.category}/${info.title}`} key={info.id} className="cursor-pointer group z-30">
+                        <Link to={`/portfolio/${info.category}/${info.title}`} key={info.id} className="cursor-pointer group z-30">
                             <div className="flex h-full justify-center items-center">
                                 <div className="absolute z-30 flex flex-col items-center gap-5 scale-[95%] group-hover:scale-100 transition duration-500 ease">
                                     <h1 style={{ fontFamily: 'airbus' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] opacity-100 lg:opacity-0 mb-[-20px] lg:group-hover:opacity-100 transition duration-500 ease'>{info.title}</h1>

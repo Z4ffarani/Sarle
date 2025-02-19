@@ -17,19 +17,19 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      {index: true, element: <Home />},
-      {path: 'sobre nós', element: <AboutUs />},
-      {path: 'portfólio', element: <Portfolio />},
-      {path: 'portfólio/:categoria', element: <Portfolio />},
-      {path: 'portfólio/:categoria/:titulo', element: <AboutProject />},
-      {path: 'contato', element: <Contact />},
-      {path: '*', element: <PageNotFound />},
-    ]
-  }
-])
+      { index: true, element: <Home /> },
+      { path: 'sobre-nos', element: <AboutUs /> },
+      { path: 'portfolio', element: <Portfolio /> },
+      { path: 'portfolio/:categoria', element: <Portfolio /> },
+      { path: 'portfolio/:categoria/:titulo', element: <AboutProject /> },
+      { path: 'contato', element: <Contact /> },
+      { path: '*', element: <PageNotFound /> },
+    ],
+  },
+]);
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 )

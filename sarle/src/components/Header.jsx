@@ -37,6 +37,13 @@ export default function Header() {
         setMenu(false)
     }
 
+    const navLinks = [
+        { path: '/', label: 'HOME' },
+        { path: '/sobre-nos', label: 'SOBRE NÓS' },
+        { path: '/portfolio', label: 'PORTFÓLIO' },
+        { path: '/contato', label: 'CONTATO' }
+    ];
+
     return (
         <div className={`fixed z-[50] w-full ${scrolled ? 'bg-opacity-100' : 'bg-opacity-0'} bg-[#050505] transition-all duration-100 ease pb-8`}>
             <header className='flex items-center justify-between w-full pt-[28px] pl-[40px] transition duration-200 ease'>
@@ -59,15 +66,15 @@ export default function Header() {
             }
 
             <nav style={{ fontFamily: 'airbus' }} className={`${menu ? 'translate-x-[0px]' : 'translate-x-[-1000px]'} transition-all duration-700 ease absolute z-10 bg-[#050505] text-[30px] 2xl:text-[35px] w-[100%] sm:w-[50%] md:w-[38%] lg:w-[30%] xl:w-[23%] 2xl:w-[23%] top-0 pt-[100px] h-screen flex flex-col pl-10 gap-[13px] font-medium text-white select-none`}>
-                {['/', '/sobre nós', '/portfólio', '/contato'].map((path, index) => (
-                    <Link
-                        key={index}
-                        onClick={handleCloseMenu}
-                        to={path}
-                        className="relative hover:text-designRed hover:translate-x-[10px] transition duration-300 ease"
-                    >
-                        {path.replace('/', '').toUpperCase() || 'HOME'}
-                    </Link>
+                {navLinks.map(({ path, label }, index) => (
+                <Link
+                    key={index}
+                    onClick={handleCloseMenu}
+                    to={path}
+                    className="relative hover:text-designRed hover:translate-x-[10px] transition duration-300 ease"
+                >
+                    {label}
+                </Link>
                 ))}
             </nav>
         </div>

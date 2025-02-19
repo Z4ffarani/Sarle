@@ -1,4 +1,3 @@
-import emailjs from '@emailjs/browser'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Whatsapp from '../components/Whatsapp.jsx'
@@ -34,27 +33,27 @@ export default function Home() {
     }, [])
 
     function sendEmail(e) {
-        e.preventDefault()
-
+        e.preventDefault();
+    
         if (email === '' || message === '') {
-            alert('Preencha todos os campos para enviar a mensagem.')
-            return
+            alert('Preencha todos os campos para enviar a mensagem.');
+            return;
         }
-
-        const templateParams = {
-            email: email,
-            message: message
-        }
-
-        emailjs.send("service_sqic02f", "template_pcraepr", templateParams, "0G1Jc6AAMc3jtTUoi")
-        .then((response) => {
-            alert("E-mail enviado! Entraremos em contato em breve.")
-            console.log("E-mail enviado", response.status, response.text)
-            setEmail('')
-            setMessage('')
-        }, (err) => {
-            console.log("Erro: ", err)
+    
+        fetch("https://sarle.com.br/send_email.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                email: email,
+                message: message
+            })
         })
+        .then(response => response.text())
+        .catch(error => console.log("Erro:", error));
+
+        alert("Mensagem enviada com sucesso!");
     }
 
     const [videoDepoimento, setVideoDepoimento] = useState(0)
@@ -107,7 +106,7 @@ export default function Home() {
                         <div className='w-full flex flex-col justify-center items-center absolute mt-[-300px] lg:mt-[-380px] xl:mt-[-550px] 2xl:mt-[-650px]'>
                             <img src={Logo} alt="Logo" className={`transition duration-500 ease hidden lg:block sm:h-[200px] mt-[-50px] select-none ${scrolled ? 'translate-y-[-50px] opacity-0' : 'opacity-100'}`}/>
                             
-                            <Link to='/sobre nós' style={{ fontFamily: 'airbus' }}
+                            <Link to='/sobre-nos' style={{ fontFamily: 'airbus' }}
                                 className={`hidden lg:block md:mt-12 lg:mt-14 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[300px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] py-[15px] rounded-full border-[3px] border-designRed hover:border-white ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
                                 SOBRE NÓS
                             </Link>
@@ -122,7 +121,7 @@ export default function Home() {
                             className="m-5 w-[90%] lg:w-[70%] sm:mt-10 object-cover rounded-lg border-2 border-designRed z-30"
                         />
                         
-                        <Link to='/sobre nós' style={{ fontFamily: 'airbus' }}
+                        <Link to='/sobre-nos' style={{ fontFamily: 'airbus' }}
                             className="md:hidden mt-5 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[260px] sm:w-[350px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] mx-6 py-[15px] rounded-full border-[3px] border-designRed hover:border-white">
                             SOBRE NÓS
                         </Link>
@@ -136,7 +135,7 @@ export default function Home() {
                         {
                             categories.flat().slice(0, 6).map(info => (
                                 <>
-                                    <Link to={`/portfólio/${info.category}/${info.title}`} key={info.id} className="hidden lg:block cursor-pointer group z-30">
+                                    <Link to={`/portfolio/${info.category}/${info.title}`} key={info.id} className="hidden lg:block cursor-pointer group z-30">
                                         <div className="flex h-full justify-center items-center">
                                             <div className="absolute z-30 flex flex-col items-center gap-5 scale-[95%] group-hover:scale-100 transition duration-500 ease">
                                                 <h1 style={{ fontFamily: 'airbus' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] opacity-0 mb-[-20px] group-hover:opacity-100 transition duration-500 ease'>{info.title}</h1>
@@ -147,7 +146,7 @@ export default function Home() {
                                         </div>
                                     </Link>
 
-                                    <Link to={`/portfólio/${info.category}/${info.title}`} key={info.id} className="block lg:hidden cursor-pointer z-30">
+                                    <Link to={`/portfolio/${info.category}/${info.title}`} key={info.id} className="block lg:hidden cursor-pointer z-30">
                                         <div className="flex h-full justify-center items-center">
                                             <div className="absolute z-30 flex flex-col items-center gap-5 transition duration-500 ease">
                                                 <h1 style={{ fontFamily: 'airbus' }} className='text-white text-[25px] md:text-[25px] lg:text-[40px] opacity-100'>{info.title}</h1>
@@ -161,7 +160,7 @@ export default function Home() {
                         }
                     </div>
 
-                    <Link to='/portfólio' style={{ fontFamily: 'airbus' }}
+                    <Link to='/portfolio' style={{ fontFamily: 'airbus' }}
                         className="mt-10 sm:mt-16 hover:bg-opacity-100 active:scale-[85%] backdrop-blur-md bg-opacity-50 bg-designRed scale-90 transition-all w-[280px] sm:w-[380px] duration-300 ease text-center text-white text-[23px] sm:text-[30px] mx-10 py-[15px] rounded-full border-[3px] border-designRed hover:border-white">
                         VER PORTFÓLIO
                     </Link>
