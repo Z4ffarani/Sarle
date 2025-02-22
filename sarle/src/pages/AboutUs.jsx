@@ -116,7 +116,7 @@ export default function AboutUs() {
             <h2 style={{ fontFamily: 'airbus' }} className='pt-10 sm:mb-[-30px] sm:py-16 text-white text-center text-[33px] md:text-[45px] lg:text-[60px] opacity-40 text-wrap px-5 select-none'>EQUIPE</h2>
 
             <div className="flex justify-center mx-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
                             <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">RAPHAEL</h1>
@@ -147,10 +147,10 @@ export default function AboutUs() {
                     </div>
                     <div className="w-[280px] h-[500px]">
                         <div className="absolute p-5 mt-[380px] text-white">
-                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">VICTOR</h1>
-                            <h2 style={{ }} className="text-[20px]">Assistente</h2>
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">LAÍS</h1>
+                            <h2 style={{ }} className="text-[20px]">Fotógrafa</h2>
                         </div>
-                        <img src="../../../sobre-nós/equipe/lais-fotógrafa.jpg" className="object-cover h-full"/>
+                        <img src="../../../sobre-nós/equipe/lais-fotógrafa.JPG" className="object-cover h-full"/>
                     </div>
                 </div>
             </div>
