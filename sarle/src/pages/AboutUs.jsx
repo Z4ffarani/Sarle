@@ -145,6 +145,13 @@ export default function AboutUs() {
                         </div>
                         <img src="../../../sobre-nós/equipe/victor-assistente.png" className="object-cover h-full"/>
                     </div>
+                    <div className="w-[280px] h-[500px]">
+                        <div className="absolute p-5 mt-[380px] text-white">
+                            <h1 style={{ fontFamily: 'airbus', }} className="text-[30px]">VICTOR</h1>
+                            <h2 style={{ }} className="text-[20px]">Assistente</h2>
+                        </div>
+                        <img src="../../../sobre-nós/equipe/lais-fotógrafa.jpg" className="object-cover h-full"/>
+                    </div>
                 </div>
             </div>
         </div>
