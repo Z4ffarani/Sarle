@@ -91,13 +91,13 @@ export default function AboutProject() {
             {
               content.verticals ? (
                 <div className='flex justify-center items-center w-full'>
-                  <div className={`grid sm:grid-cols-1 lg:grid-cols-3 mb-20 gap-10 lg:gap-5 xl:gap-24`}>
+                  <div className={`grid sm:grid-cols-1 lg:grid-cols-3 mb-10 md:mb-20 gap-10 lg:gap-5 xl:gap-24`}>
                     {
                       content.verticals.map((video, index) => (
                         <div key={index} className='flex justify-center items-center h-[480px] w-[280px] sm:h-[700px] sm:w-[600px] lg:h-[550px] lg:w-[315px]'>
                           <iframe
                             src={video}
-                            className="absolute w-[280px] h-[500px] rounded-[20px] sm:h-[705px] sm:w-[385px] scale-[93%] sm:scale-[95%] sm:rounded-[46px] lg:scale-[75%] pr-1"
+                            className="absolute w-[280px] h-[500px] rounded-[35px] sm:h-[705px] sm:w-[385px] scale-[93%] sm:scale-[95%] sm:rounded-[46px] lg:scale-[75%] pr-1"
                           />
                           
                           <img src={Cellphone} className='w-[280px] sm:w-[400px] h-[100%]'/>
@@ -108,6 +108,13 @@ export default function AboutProject() {
                 </div>
               ) : null
             }
+
+            <div className='px-5 sm:px-16 sm:py-10 gap-2 sm:gap-3 flex flex-col text-center justify-center items-center'>
+              <h1 style={{ fontFamily: 'instrument' }} className='text-[18px] sm:text-[25px] md:text-[30px] font-semibold'>Cada projeto que você viu aqui começou com uma conversa. Vamos começar a sua?</h1>
+              <h2 style={{ fontFamily: 'instrument' }} className='hidden sm:block text-[20px] md:text-[25px] font-light mb-8'>Fale conosco agora pelo WhatsApp e tire suas ideias do papel!</h2>
+            
+              <a href='https://api.whatsapp.com/send?phone=5511975440070' style={{ fontFamily: 'instrument' }} className='text-white mt-6 sm:mt-0 px-5 py-[10px] border-2 rounded-full bg-green-800 text-[20px] sm:text-[25px] hover:bg-green-500 transition-all duration-300 ease active:scale-90 font-medium'>Fale conosco</a>
+            </div>
           </>
         ) : null
       }
